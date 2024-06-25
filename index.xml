@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dai Liang Group</title>
+    <link>http://personal.cityu.edu.hk/liangdai/</link>
+      <atom:link href="http://personal.cityu.edu.hk/liangdai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dai Liang Group</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2024</copyright><lastBuildDate>Mon, 28 Feb 2022 00:45:00 +0000</lastBuildDate>
+    <image>
+      <url>http://personal.cityu.edu.hk/liangdai/img/banner_knot.jpg</url>
+      <title>Dai Liang Group</title>
+      <link>http://personal.cityu.edu.hk/liangdai/</link>
+    </image>
+    
+    <item>
+      <title>3D Print Introduction #1</title>
+      <link>http://personal.cityu.edu.hk/liangdai/phy3116/3d-printer/</link>
+      <pubDate>Mon, 28 Feb 2022 00:45:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/phy3116/3d-printer/</guid>
+      <description>&lt;h1 id=&#34;first-you-will-need-a-digital-model-of-your-molecule-of-interest&#34;&gt;First you will need a digital model of your molecule of interest.&lt;/h1&gt;
+&lt;p&gt;There are multiple options to generate a 3D printable protein model. These instructions are written for the popular software ChimeraX. You can download in 
+&lt;a href=&#34;https://www.cgl.ucsf.edu/chimerax/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCSF ChimeraX&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Find your model on the 
+&lt;a href=&#34;https://www.rcsb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Protein Data Bank&lt;/a&gt; and download in PDB Format (gz).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;In case you haven’t yet, download and install ChimeraX (Free for private use and academic or research institutes).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Start ChimeraX and open the file (File -&amp;gt; Open).&lt;/strong&gt;
+&lt;img src=&#34;1.png&#34; alt=&#34;ChimeraX 1&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Often, the model will contain additional chains or ligands. To remove the extra chains, do the following:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Select the chain you do not need (Select -&amp;gt; Chain), go to Actions -&amp;gt; Ribbon -&amp;gt; Hide. &lt;img src=&#34;2.png&#34; alt=&#34;ChimeraX 2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;If there are many extra chains, select the one you need (Select -&amp;gt; Chain), and then click on Select – Invert all models. This will select all chains besides the one you need. Then, go to Actions -&amp;gt; Ribbon -&amp;gt; Hide.&lt;/li&gt;
+&lt;li&gt;For a ligand:
+&lt;ul&gt;
+&lt;li&gt;Even if you want to print the ligand as well, we still recommend removing as described above and printing it separately. Since there is normally (logically) a gap between ligand and molecule they should ideally be printed as separate objects.&lt;/li&gt;
+&lt;li&gt;Remove the ligand by selecting the entire chain (Select -&amp;gt; Chain), then go to Actions -&amp;gt;Atoms/Bonds -&amp;gt; Hide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Prepare the chain for 3D-printing: Most importantly, you need to make sure the structure is thick enough to survive printing. Optionally you can add colors to highlight features or communicate other important information.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Thickness of the structures: In order to adjust the sizes, select the entire chain (Select -&amp;gt; Chain) and go to Tools -&amp;gt; Depiction -&amp;gt; Ribbon Style Editor (for older version), and for latest version Use command like &lt;code&gt;cartoon style width 2.5 thick 0.91&lt;/code&gt; to change the width and thick of the cartoon bonds. As a rule of thumb, the minimum thickness in smaller models should not be below 3 mm, in models with height, length or width greater than 20 cm the minimum thickness should be somewhere at least 6 mm, instructions on how to measure the wall thickness are at the end of this section.&lt;/li&gt;
+&lt;li&gt;Colors (optional): color the secondary structures by doing the following: Select -&amp;gt; Structure -&amp;gt; Secondary Structure -&amp;gt; Coil. Go to Actions -&amp;gt; Color and chose a Coil color. Repeat the same process with Helices and Sheets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Done! Now export your model for 3D printing.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to File -&amp;gt; Export Scene. For file format use STL for non-colored 3D-printing (i.e. for FDM, SLS, or SLA 3D printing technologies) and VRML (.wrl, .vrml) for colored models.&lt;img src=&#34;3.png&#34; alt=&#34;ChimeraX 3&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Repair pathways of DNA damages [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/repair-pathways-of-dna-damages/</link>
+      <pubDate>Wed, 16 Feb 2022 00:46:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/repair-pathways-of-dna-damages/</guid>
+      <description>&lt;h1 id=&#34;single-strand-break-repair&#34;&gt;Single-strand break repair:&lt;/h1&gt;
+&lt;p&gt;Hereditary defects in the repair of DNA damage are implicated in a variety of diseases, many of which are typified by neurological dysfunction and increased genetic instability and cancer. Of the different types of DNA damage that arise in cells, single-strand breaks (SSBs) are the most common, arising at a frequency of tens of thousands per cell per day from direct attack by intracellular metabolites and from spontaneous DNA decay. Single-strand breaks (SSBs) are discontinuities in one strand of the DNA double helix and are usually accompanied by loss of a single nucleotide and by damaged 5- and/or 3-termini at the site of the break. 
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3efgg2oSmpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;double-strand-break-repair&#34;&gt;Double-strand break repair:&lt;/h1&gt;
+&lt;p&gt;Double-strand DNA breaks are common events in eukaryotic cells, and there are two major pathways for repairing them: homologous recombination (HR) and nonhomologous DNA end joining (NHEJ).
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GPXI0ictMJA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Homologous recombination repair (HR)&lt;/strong&gt; is a DNA repair process that includes the invasion of an undamaged DNA molecule by a damaged molecule of identical or very similar sequence. Resynthesis of the damaged region is accomplished using the undamaged molecule as a template.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GV0ryOnk57Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Non-homologous end joining (NHEJ)&lt;/strong&gt; is a pathway that repairs double-strand breaks in DNA. NHEJ is referred to as &amp;ldquo;non-homologous&amp;rdquo; because the break ends are directly ligated without the need for a homologous template.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/H6Yym2rxS_Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;font size=&#34;5&#34;&gt;
+After viewing the video and text, you are strongly encouraged to exercise the following question(s) for the evaluation of the understanding of this item.&lt;/p&gt;
+&lt;!-- &lt;style&gt;
+.divCss{
+    margin-bottom:10px;
+}
+.olCss{
+    padding-left:30px;
+    margin-top:0px;
+    margin-left:40px;
+    margin-bottom:0px;
+}
+.inputClass{
+    float:left;
+    margin-top:10px;
+    margin-left:-50px;
+}
+.liright{
+    
+}
+
+
+&lt;/style&gt;
+
+
+&lt;div class=&#39;divCss&#39;&gt;
+&lt;b&gt;Q1.&lt;/b&gt; In most cases, do DNA single-stranded breaks (SSBs) cause cell death?
+&lt;ol type=&#34;A&#34; start=&#34;&#34; class=&#39;olCss&#39;&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;A&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;Yes&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;B&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;No&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;b&gt;Q2.&lt;/b&gt; What is the typical number of DNA single-stranded breaks (SSBs) per mammalian cell each day? Just give the order of magnitude. 
+&lt;ol type=&#34;A&#34; start=&#34;&#34; class=&#39;olCss&#39;&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;A&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;1&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;B&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;10&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;C&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;100&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;D&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;1000&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;E&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;10000&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;b&gt;Q3.&lt;/b&gt; What is the following repair pathway likely to correctly repair DNA double-stranded breaks (DSBs)?
+&lt;ol type=&#34;A&#34; start=&#34;&#34; class=&#39;olCss&#39;&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;A&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;Homologous recombination repair&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;B&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;Non-homologous end joining&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;b&gt;Q4.&lt;/b&gt; Does non-homologous end joining repair requires an undamaged template DNA?
+&lt;ol type=&#34;A&#34; start=&#34;&#34; class=&#39;olCss&#39;&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;A&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;Yes&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;B&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;No&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;b&gt;Q5.&lt;/b&gt;Does homologous recombination repair requires an undamaged template DNA?
+&lt;ol type=&#34;A&#34; start=&#34;&#34; class=&#39;olCss&#39;&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;A&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;Yes&lt;/li&gt;
+    &lt;input class=&#39;inputClass&#39; type=&#34;radio&#34; value=&#34;B&#34;/&gt;&lt;li class=&#39;liright&#39;&gt;No&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt; --&gt;
+&lt;/font&gt;
+&lt;!-- &lt;div data-tf-widget=&#34;ct86Ribv&#34; data-tf-iframe-props=&#34;title=Quiz of Repair pathways of DNA damages&#34; data-tf-medium=&#34;snippet&#34; style=&#34;width:100%;height:400px;&#34;&gt;&lt;/div&gt;&lt;script src=&#34;//embed.typeform.com/next/embed.js&#34;&gt;&lt;/script&gt; --&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSf8bRmYo8dJaUHqlsNglOMZqn0WTVh_sw7Pn2MU8jbex_gGLg/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1496&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DNA packaging in cell [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/dna-packaging-in-cell/</link>
+      <pubDate>Thu, 13 Jan 2022 00:50:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/dna-packaging-in-cell/</guid>
+      <description>&lt;p&gt;Cells have DNA, the blueprint of life. DNA consists of two chains of sugar, phosphate and four different bases. As the genetic information is incorporated in the arrangement of these bases, bases are combined firmly to mutually act as a template in order to maintain the arrangement. When DNA is irradiated, it may be partially damaged depending on the amount of radiation.&lt;/p&gt;
+&lt;h2 id=&#34;dna-is-small-but-very-long&#34;&gt;DNA is small but very long&lt;/h2&gt;
+&lt;p&gt;The haploid human genome contains approximately 3 billion base pairs of DNA packaged into 23 chromosomes. Most cells in the body are diploid, with 23 pairs of chromosomes. That makes a total of 6 billion base pairs of DNA per cell. Because each base pair is around 0.34 nanometers long, each diploid cell contains about 2 meters of DNA. Moreover, the human body contains about 30 trillion cells—which works out to 60 trillion meters of DNA per human. Now, consider the fact that the Sun is 150 billion meters from Earth. This means that each of us has enough DNA to go from here to the Sun and back more than 200 times, or around Earth&#39;s equator 1.5 million times! What a tremendous project to packaging those DNA into 23 small chromosomes!&lt;/p&gt;
+&lt;h2 id=&#34;dna-histones-and-chromatin&#34;&gt;DNA, Histones, and Chromatin&lt;/h2&gt;
+&lt;p&gt;We have to give credit to certain proteins for compact chromosomal DNA into the microscopic space of the eukaryotic nucleus. These proteins are called histones, and the resulting DNA-protein complex is called chromatin. Within the nucleus, histones provide the energy to fold DNA.&lt;/p&gt;
+&lt;p&gt;Histones are a family of small, positively charged proteins termed H1, H2A, H2B, H3, and H4. DNA is negatively charged, due to the phosphate groups in its phosphate-sugar backbone, so histones bind with DNA very tightly. As a result, chromatin can be packaged into a much smaller volume than DNA alone.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-histone-octamer&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/histones.png&#34; data-caption=&#34;histone octamer&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/histones.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    histone octamer
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Because DNA wraps around histones, histones also play a important role in chromatin regulation and in the regulation of gene expression. A histone modification is a covalent post-translational modification (PTM) to histone proteins, which can impact gene expression by altering chromatin structure or recruiting histone modifiers. Histone modifications act in diverse biological processes such as transcriptional activation/inactivation, chromosome packaging, and DNA damage/repair.&lt;/p&gt;
+&lt;h2 id=&#34;the-unit-of-chromatinnucleosome&#34;&gt;The Unit of Chromatin:Nucleosome&lt;/h2&gt;
+&lt;p&gt;The basic repeating structural unit of chromatin is the nucleosome, which contains eight histone proteins and about 146 base pairs of DNA.
+Today, researchers know that nucleosomes are structured as follows: Two each of the histones H2A, H2B, H3, and H4 come together to form a histone octamer, which binds and wraps approximately 1.7 turns of DNA, or about 146 base pairs. The addition of one H1 protein wraps another 20 base pairs, resulting in two full turns around the octamer, and forming a structure called a chromatosome. Every chromosome contains hundreds of thousands of nucleosomes, and these nucleosomes are joined by the DNA that runs between them.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-diagram-for-nucleosome&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/nucleosome.png&#34; data-caption=&#34;diagram for nucleosome&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/nucleosome.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    diagram for nucleosome
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xk7jE4MRCR8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gbSIBhFwQ4s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLScKz9JbgqCwzXiVeZdcPaRp3W1b_H-SaM2TN8qb-DCauORrsg/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1000&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Central dogma, translation, transcription [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/central-dogma-translation-transcription/</link>
+      <pubDate>Thu, 13 Jan 2022 00:49:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/central-dogma-translation-transcription/</guid>
+      <description>&lt;h2 id=&#34;central-dogma&#34;&gt;Central dogma&lt;/h2&gt;
+&lt;p&gt;The central dogma of molecular biology is an explanation of the flow of genetic information within a biological system. It is originally stated as &amp;ldquo;DNA makes RNA, and RNA makes protein&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The dogma is a framework for understanding the transfer of sequence information between information-carrying biopolymers, in the most common or general case, in living organisms. There are 3 major classes of such biopolymers: DNA and RNA (both nucleic acids), and protein. There are 3 × 3 = 9 conceivable direct transfers of information that can occur between these. The dogma classes these into 3 groups of 3: three general transfers (believed to occur normally in most cells), three special transfers (known to occur, but only under specific conditions in case of some viruses or in a laboratory), and three unknown transfers (believed never to occur). The general transfers describe the normal flow of biological information: DNA can be copied to DNA (&lt;strong&gt;DNA replication&lt;/strong&gt;), DNA information can be copied into mRNA (&lt;strong&gt;transcription&lt;/strong&gt;), and proteins can be synthesized using the information in mRNA as a template (&lt;strong&gt;translation&lt;/strong&gt;). The special transfers describe: RNA being copied from RNA (&lt;strong&gt;RNA replication&lt;/strong&gt;), DNA being synthesised using an RNA template (&lt;strong&gt;reverse transcription&lt;/strong&gt;), and proteins being synthesised directly from a DNA template without the use of mRNA. The unknown transfers describe: a protein being copied from a protein, synthesis of RNA using the primary structure of a protein as a template, and DNA synthesis using the primary structure of a protein as a template - these are not thought to naturally occur.&lt;/p&gt;
+&lt;p&gt;Table of the three classes of information transfer suggested by the dogma
+| General     | Special      | Unknown          |
+| &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|
+| DNA → DNA   | RNA → DNA    |protein → DNA     |
+| DNA → RNA   | RNA → RNA    |protein → RNA     |
+|RNA → protein|	DNA → protein|protein → protein |&lt;/p&gt;
+&lt;h2 id=&#34;dna-replication&#34;&gt;DNA Replication&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DNA replication&lt;/strong&gt; is the process by which DNA makes a copy of itself during cell division.
+-The first step in DNA replication is to ‘unzip’ the double helix structure of the DNA molecule.
+-Then a short piece of RNA called a primer comes along and binds to the end of two unzip strands continuously and discontinuously, respectively.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once all of the bases are matched up (A with T, C with G), an enzyme called exonuclease strips away the primers. And the new strand is proofread to make sure there are no mistakes in new DNA sequence.&lt;/li&gt;
+&lt;li&gt;Finally, an enzyme called DNA ligase seals up the sequence of DNA into two continuous double strands.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-an-illustration-to-show-replication-of-the-leading-and-lagging-strands-of-dna-image-credit-genome-research-limited&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/DNA%20replication.png&#34; data-caption=&#34;An illustration to show replication of the leading and lagging strands of DNA. Image credit: Genome Research Limited&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/DNA%20replication.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    An illustration to show replication of the leading and lagging strands of DNA. Image credit: Genome Research Limited
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;transcription&#34;&gt;Transcription&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Transcription&lt;/strong&gt; is the process by which the information in a strand of DNA is copied into a new molecule of messenger RNA (mRNA). DNA safely and stably stores genetic material in the nuclei of cells as a reference, or template. Meanwhile, mRNA is comparable to a copy from a reference book because it carries the same information as DNA but is not used for long-term storage and can freely exit the nucleus.&lt;/p&gt;
+&lt;p&gt;-Transcription is initiated by an enzyme called RNA polymerase and a number of accessory proteins called transcription factors, which form  a complex called the transcription initiation complex.
+-Then, the RNA polymerase begins mRNA synthesis by matching complementary bases to the original DNA strand.
+-The mRNA molecule is elongated and once the strand is completely synthesized, transcription is terminated.&lt;/p&gt;
+&lt;p&gt;The newly formed mRNA copies of the gene then serve as blueprints for protein synthesis during the process of translation.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-an-illustration-to-show-transcription-of-dna&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/transcription.png&#34; data-caption=&#34;An illustration to show transcription of DNA.&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/transcription.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    An illustration to show transcription of DNA.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;translation&#34;&gt;Translation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Translation&lt;/strong&gt; is a process by which the genetic code contained within a messenger RNA (mRNA) molecule is decoded to produce a specific sequence of amino acids in a polypeptide chain.&lt;/p&gt;
+&lt;p&gt;The key components required for translation are mRNA, ribosomes, and transfer RNA (tRNA).
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-trna-featuring-the-anticodon-complementary-to-specific-mrna&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/tRNA.png&#34; data-caption=&#34;tRNA featuring the anticodon, complementary to specific mRNA&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/tRNA.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    tRNA featuring the anticodon, complementary to specific mRNA
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+During translation, mRNA nucleotide bases are read as codons of three bases. Each ‘codon’ codes for a particular amino acid. Every tRNA molecule possesses an anticodon that is complementary to the mRNA codon, and at the opposite end lies the attached amino acid. tRNA molecules are therefore responsible for bringing amino acids to the ribosome in the correct order ready for polypeptide assembly.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-diagram-showing-the-translation-of-mrna-and-the-synthesis-of-proteins-by-a-ribosome&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/translation.png&#34; data-caption=&#34;Diagram showing the translation of mRNA and the synthesis of proteins by a ribosome&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/translation.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Diagram showing the translation of mRNA and the synthesis of proteins by a ribosome
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+Please note that a single amino acid may be coded for by more than one codon. There are also specific codons that signal the start and the end of translation.
+Below is the RNA codon table to show the corresponding relation between RNA codes and amino acids.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-the-codon-table&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/codon%20table.jpg&#34; data-caption=&#34;The codon table.&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/codon%20table.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    The codon table.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/whV_CkKT7F0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/anmDuZjxPo0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y6MuZrQiN9k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLScrBZT5kgIxayKQupSEXvt_mJnT2Y3JZaaNSsGr-38uYygttg/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1100&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chromosome aberrations [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/chromosomal-aberration/</link>
+      <pubDate>Thu, 13 Jan 2022 00:48:50 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/chromosomal-aberration/</guid>
+      <description>&lt;p&gt;Chromosomal aberration, or chromosomal mutation, is a missing, extra, or irregular portion of chromosomal DNA. These can occur in the form of numerical abnormalities (gains and losses) or structural abnormalities (deletions, inversions, and exchanges). Generally, chromosomal aberrations are going to be deleterious and lead to many genetic diseases. Numerical abnormalities can result in spontaneous abortions and severe birth defects. Structural abnormalities can lead to birth defects, cancer, and other late onset disease outcomes.&lt;/p&gt;
+&lt;h2 id=&#34;duplication&#34;&gt;Duplication&lt;/h2&gt;
+&lt;p&gt;Duplication mutation is gene sequence that is repeated several to hundreds of times. It can occur in normal chromosomes and may have adaptive advantages in fact. For example, useful mutations may occur in the copy of the original gene. Basically, the original gene provides a stable fallback, like a safety net, and the new gene can have mutations, like an experiment to express extra protein. Sometimes, the person who has duplication mutations can be completely unaffected.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=1.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;deletion&#34;&gt;Deletion&lt;/h2&gt;
+&lt;p&gt;Deletion mutation results in the loss of some segment of a chromosome. Now, most deletion mutations are either lethal or will tend to cause serious disorders unlike the duplication mutation. For example, a disease called cri-du-chat is caused by the deletion mutation in the upper arm of chromosome 5. The deletion can lead to mental retardation and malformed larynx as well as obvious physical appearances.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=2.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;inversion&#34;&gt;Inversion&lt;/h2&gt;
+&lt;p&gt;Inversion mutation is a chromosome rearrangement in which a segment of a chromosome is reversed end-to-end. An inversion usually occurs when a single chromosome undergoes breakage and rearrangement within itself. It can lead to two potential issues: 1. The inversion may bring together genes that were not previously close to each other especially the regulatory regions of some genes, which could cause those genes turned on or off at the wrong time. 2. Any crossover of two genes due to inversion can lead to wrong productions of proteins related to these genes.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=3.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;translocation&#34;&gt;Translocation&lt;/h2&gt;
+&lt;p&gt;Chromosome translocation is a phenomenon that results in unusual rearrangement of chromosomes. It includes balanced and unbalanced translocation with two main types: reciprocal- and Robertsonian translocation. Most translocation is reciprocal. Reciprocal translocation is a chromosome abnormality caused by exchange of parts between non-homologous chromosomes. Two detached fragments of two different chromosomes are switched. The non-homologous chromosomes don’t have the same genes. Therefore, there is no conspecific information to exchange. The result is that one chromosome missing some material and the other chromosome now has added material. There are two potential problems associated with it. If the missing gene is critical, the individual who got the shorter chromosome (the top one in the diagram) will definitely have problems. Moreover, if the duplication of these genes is inappropriate, any individual carrying the longer chromosome (the bottom one in the diagram) will also be affected.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=4.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;aneuploidy-and-polyploidy&#34;&gt;Aneuploidy and Polyploidy&lt;/h2&gt;
+&lt;p&gt;Another way to have abnormal chromosome is in the form of numbers. Aneuploidy is the presence of an abnormal number of chromosomes in a cell, such as a human cell having 45 or 47 chromosomes instead of 46 ( Normally, humans have 23 pairs of chromosomes). Any number above or below 46 will tend to be termed. It is one of the major causes of human reproductive failure. In most case, the miscarriage of a woman is because of aneuploidy. On the other hand, polyploidy is a kind of different situation where the cell does not have an extra one or two chromosomes but a duplication of every chromosome. For example, in polyploidy, these individuals have three or more of each type of chromosomes (3n or 4n) instead of having the usual 2n number like human do. In human, this condition is lethal. Most of these individuals die before birth.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=5.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ring-chromosomes&#34;&gt;Ring chromosomes&lt;/h2&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=ring_chromosome.png width=60% /&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;chromatid-bridge&#34;&gt;Chromatid Bridge&lt;/h2&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=chromatid_bridge.png width=60% /&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VuzeD_VyBO4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSePTggYJMKJrV_TY8JnXlsbZUkQkSn4CXMpueWcJNqllbC6Qg/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1000&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is radiation?  Electromagnetic &amp; Particulate radiations [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/what_is_radiation/</link>
+      <pubDate>Thu, 13 Jan 2022 00:48:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/what_is_radiation/</guid>
+      <description>&lt;h2 id=&#34;what-is-radiation&#34;&gt;What is Radiation?&lt;/h2&gt;
+&lt;p&gt;In physics, radiation is defined as energy that travels through space or matter in the form of a particle or wave. It can be produced in one of two ways: by radioactive decay of an unstable atom (radionuclide), or by the interaction of a particle with matter. Some attributes of radioactive decay are spontaneousness and randomness. The type of radiation emitted depend on the specific radionuclide.  Radiation emission as the result of an interaction depends on both the incoming particle and the material it hits, and is theoretically predictable if enough information is known.&lt;/p&gt;
+&lt;h2 id=&#34;electromagnetic--particulate-radiations&#34;&gt;Electromagnetic &amp;amp; Particulate Radiations&lt;/h2&gt;
+&lt;p&gt;Radiation is described by its type and energy. The types of radiation fall into two main categories: particulate and electromagnetic.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;electromagnetic radiation&lt;/strong&gt; consists of photons that have energy, but no mass or charge, such as radio waves, microwaves, infrared, visible light, ultraviolet, x-rays, and gamma radiation (γ). A photon, as described by quantum theory, is a &amp;ldquo;particle&amp;rdquo; or &amp;ldquo;quantum&amp;rdquo; that contains a discrete quantity of electromagnetic energy which travels at a speed of light.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;particulate radiation&lt;/strong&gt; consists of particles that have mass and energy, and may or may not have an electric charge, such as alpha radiation (α), beta radiation (β),proton radiation and neutron radiation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Those radiation type above will be discussed in next section in detail.
+The most common unit of energy used to describe radiation is the &lt;strong&gt;electronvolt(eV)&lt;/strong&gt;. An electronvolt is the amount of kinetic energy an electron gains when accelerated through a potential difference of one volt. The conversion to SI units is $1eV = 1.6*10^{-19}$ Joules.&lt;/p&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSeCrWbPWRBNRAefUwQTJpolAOCmZU9ZwuZJD7dtJm9uaEMAwQ/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1200&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wavelength, frequency, energy [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/wavelength_frequency_energy/</link>
+      <pubDate>Thu, 13 Jan 2022 00:47:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/wavelength_frequency_energy/</guid>
+      <description>&lt;p&gt;As we&#39;ve discussed before, electromagnetic radiation is essentially electromagnetic wave (or a photon in a particulate view) and have no mass. The important properties that differs different electromagnetic radiations is their wavelength, which also determines frequency and energy.&lt;/p&gt;
+&lt;h2 id=&#34;wavelength&#34;&gt;Wavelength&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Wavelength&lt;/strong&gt;, distance between corresponding points of two consecutive waves. “Corresponding points” refers to two points or particles in the same phase. Wavelength is usually denoted by the Greek letter lambda (λ); it is equal to the speed (v) of a wave train in a medium divided by its frequency (f): λ = v/f.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-types-of-radiation-vector-illustration-diagram-and-labeled-example&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/1.jpg&#34; data-caption=&#34;Types of radiation vector illustration diagram and labeled example&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/1.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Types of radiation vector illustration diagram and labeled example
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;frequency&#34;&gt;Frequency&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Frequency&lt;/strong&gt; is the number of occurrences of a repeating event per unit of time. Frequency is measured in units of &lt;strong&gt;hertz&lt;/strong&gt; which is equal to one occurrence of a repeating event per second. The &lt;strong&gt;period&lt;/strong&gt; is the duration of time of one cycle in a repeating event, so the period is the reciprocal of the frequency. Frequency and period is usually denoted as &lt;em&gt;f&lt;/em&gt; and &lt;em&gt;T&lt;/em&gt;, respectively.&lt;/p&gt;
+&lt;h2 id=&#34;wave-particle-duality&#34;&gt;Wave-particle duality&lt;/h2&gt;
+&lt;p&gt;According to &lt;strong&gt;wave-particle duality&lt;/strong&gt;, every particle may be described as either a particle or a wave. Simpliy speaking, every particle can be observed as a wave especially in a high speed close to the velocity of light. The electromagnetic wave can also be treated as a particle, which is a photon. Wave-particle duality theory express the inability of the classical concepts &amp;ldquo;particle&amp;rdquo; or &amp;ldquo;wave&amp;rdquo; to fully describe the behaviour of quantum-scale object and connect the particulate properties and wave properties together.&lt;/p&gt;
+&lt;h2 id=&#34;energy&#34;&gt;Energy&lt;/h2&gt;
+&lt;p&gt;In physics, and in particular as measured by radiometry, radiant eergy is the energy of electromagnetic and gravitational radiation. The quantity of radiany energy may be calculated by integrating radiant flux with respect to time. The symbol Q_e is often used throughout literature to denote radiant energy. The power of radiation desicribes the energy transmision of power from one location to another in a unit time.&lt;/p&gt;
+&lt;p&gt;However, the ability and strength of ionization depends on the energy of a single radiant particle (including photon).&lt;/p&gt;
+&lt;p&gt;For example, the energy of a photon is
+$$E = \frac{hc}{\lambda}$$
+, where &lt;em&gt;h&lt;/em&gt; is Planck constant.&lt;/p&gt;
+&lt;p&gt;The energy of a real particle is
+$$ E = \frac{h^{2}f^{2}}{2m}$$&lt;/p&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfUpacTbdpQwVnmAmRNFxR48DIe4RQyxzKwUU7aHLAZyQz5cw/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1300&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Proton, neutron, α, β, γ, X-ray [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/radiation_type/</link>
+      <pubDate>Thu, 13 Jan 2022 00:46:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/radiation_type/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Ionizing radiation is radiation, traveling as a particle or electromagnetic wave, that carries sufficient energy to detach electrons from atoms or molecules, thereby ionizing an atom or a molecule. Ionizing radiation is made up of energetic subatomic particles, ions or atoms moving at high speed, and electromagnetic waves on the high-energy spectrum.&lt;/p&gt;
+&lt;p&gt;Ionizing radiation takes a few forms: Alpha, beta, and neutron particles, and gamma and X-rays. All types are caused by unstable atoms, which have an excess of energy or mass. In order to reach a stable state, thery must release that extra energy or mass in the form of radiation.&lt;/p&gt;
+&lt;h2 id=&#34;alpha-radiation&#34;&gt;Alpha Radiation&lt;/h2&gt;
+&lt;p&gt;Alpha radiation occurs when an atom undergoes radioactive decay, ejecting a particle, which essentially is the nucleus of a helium-4 atom and called as an alpha particle. Due to their charge and mass, alpha particles interact strongly with matter. Alpha particles are unable to penetrate the outer layer of dead skin cells, but are capable, if an alpha emitting substance is ingested in food or air, of causing serious cell damage.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-alpha-radiation-the-emission-of-an-alpha-particle-from-the-nucleus-of-an-atom&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/alpha%20radiation.png&#34; data-caption=&#34;Alpha radiation: The emission of an alpha particle from the nucleus of an atom&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/alpha%20radiation.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Alpha radiation: The emission of an alpha particle from the nucleus of an atom
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;beta-radiation&#34;&gt;Beta Radiation&lt;/h2&gt;
+&lt;p&gt;Beta radiation takes the form of either an electron or a positron (a particle with the size and mass of an electron, but with a positive charge) being emitted from an atom. Due to the smaller mass, it is able to travel further in air, up to a few meters, and can be stopped by a thick piece of plastic, or even a stack of paper. It can penetrate skin a few centimeters, posing somewhat of an external health risk.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-beta-radiation-the-emission-of-a-beta-particle-from-the-nucleus-of-an-atom&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/beta%20radiation.png&#34; data-caption=&#34;Beta radiation: The emission of a beta particle from the nucleus of an atom&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/beta%20radiation.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Beta radiation: The emission of a beta particle from the nucleus of an atom
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;gamma-radiation&#34;&gt;Gamma Radiation&lt;/h2&gt;
+&lt;p&gt;Gamma radiation, unlike alpha or beta, does not consist of any particles, instead consisting of a photon of energy being emitted from an unstable nucleus. Having no mass or charge, gamma radiation can travel much farther through air than alpha or beta, losing (on average) half its energy for every 500 feet.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-gamma-radiation-the-emission-of-an-high-energy-wave-from-the-nucleus-of-an-atom&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/gamma%20radiation.png&#34; data-caption=&#34;Gamma radiation: The emission of an high-energy wave from the nucleus of an atom&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/gamma%20radiation.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Gamma radiation: The emission of an high-energy wave from the nucleus of an atom
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;x-rays&#34;&gt;X-rays&lt;/h2&gt;
+&lt;p&gt;X-rays are similar to gamma radiation, with the primary difference being that they originate from the electron cloud. This is generally caused by energy changes in an electron, such as moving from a higher energy level to a lower one, causing the excess energy to be released. X-Rays are longer-wavelength and lower energy than gamma radiation.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-x-rays-the-emission-of-a-high-energy-wave-from-the-electron-cloud-of-an-atom&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/X-ray.png&#34; data-caption=&#34;X-Rays: The emission of a high energy wave from the electron cloud of an atom&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/X-ray.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    X-Rays: The emission of a high energy wave from the electron cloud of an atom
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;neutron-radiation&#34;&gt;Neutron Radiation&lt;/h2&gt;
+&lt;p&gt;Lastly, Neutron radiation consists of a free neutron, usually emitted as a result of nuclear fission. Able to travel hundreds or even thousands of meters in air, but they are able to be effectively stopped if blocked by a hydrogen-rich material, such as concrete or water. Not typically able to ionize an atom directly due to their lack of a charge, neutrons most commonly are indirectly ionizing, in that they are absorbed into a stable atom, thereby making it unstable and more likely to emit off ionizing radiation of another type. &lt;strong&gt;Neutrons are the only type of radiation that is able to turn other materials radioactive.&lt;/strong&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-neutron-radiation-the-emission-of-a-neutron-from-the-nucleus-of-an-atom&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Neutron%20radiation.png&#34; data-caption=&#34;Neutron radiation: The emission of a neutron from the nucleus of an atom&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Neutron%20radiation.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Neutron radiation: The emission of a neutron from the nucleus of an atom
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VeXpMijpazE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSeS1fvwhBFRWQdO4wIEQKLCPlNcokXh-DpbLvDk8gDurFl7-Q/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1100&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Absorption of x-ray photon</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/absorption-of-x-ray-photon/</link>
+      <pubDate>Thu, 13 Jan 2022 00:45:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/absorption-of-x-ray-photon/</guid>
+      <description>&lt;h2 id=&#34;compton-scattering&#34;&gt;Compton Scattering&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Compton scattering&lt;/strong&gt;, discovered by Arthur Holly Compton, is the scattering of a photon by a charged particle, usually an electron. If it results in a decrease in energy (increase in wavelength) of the photon (which may be an X-ray or gamma ray photon), it is called the Compton effect. Part of the energy of the photon is transferred to the recoiling electron.&lt;/p&gt;
+&lt;p&gt;In 1923, Compton published a paper in the Physical Review that explained the X-ray shift by attributing particle-like momentum to light quanta. The energy of light quanta depends only on the frequency of the light. In his paper, Compton derived the mathematical relationship between the shift in wavelength and the scattering angle of the X-rays by assuming that each scattered X-ray photon interacted with only one electron.&lt;/p&gt;
+&lt;p&gt;$$\lambda &#39; - \lambda = \frac{h}{m_{e}c}\left(1-\cos{\theta}\right)$$&lt;/p&gt;
+&lt;p&gt;where $\lambda$ is the initial wavelength, $\lambda &amp;lsquo;$ is the wavelength after scattering, $h$ is the Planck constant, $m_{e}$ is the electron rest mass, $c$ is the speed of light and $\theta$ is the scattering angle.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-illustration-and-formula-of-compton-scattering&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/compton%20scattering.png&#34; data-caption=&#34;illustration and formula of Compton scattering&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/compton%20scattering.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    illustration and formula of Compton scattering
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;photoelectric-process&#34;&gt;Photoelectric Process&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;photoelectric effect&lt;/strong&gt; is the emission of electrons when electromagnetic radiation, such as light, hits a material. Electrons emitted in this manner are called photoelectrons.&lt;/p&gt;
+&lt;p&gt;The photons of a light beam have a characteristic energy, called photon energy, which is proportional to the frequency of the light. In the photoemission process, when an electron within some material absorbs the energy of a photon and acquires more energy than its binding energy, it is likely to be ejected. If the photon energy is too low, the electron is unable to escape the material. Since an increase in the intensity of low-frequency light will only increase the number of low-energy photons, this change in intensity will not create any single photon with enough energy to dislodge an electron. Moreover, the energy of the emitted electrons will not depend on the intensity of the incoming light of a given frequency, but only on the energy of the individual photons.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-schematic-of-the-experiment-to-demonstrate-the-photoelectric-effect-filtered-monochromatic-light-of-certain-wavelength-strikes-the-emitting-electrode-e-inside-a-vacuum-tube-the-collector-electrode-c-is-biased-to-a-voltage-vc-that-can-be-set-to-attract-the-emitted-electrons-when-positive-or-prevent-any-of-them-from-reaching-the-collector-when-negative&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/photoelectric%20effect.png&#34; data-caption=&#34;Schematic of the experiment to demonstrate the photoelectric effect. Filtered, monochromatic light of certain wavelength strikes the emitting electrode (E) inside a vacuum tube. The collector electrode (C) is biased to a voltage VC that can be set to attract the emitted electrons, when positive, or prevent any of them from reaching the collector when negative.&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/photoelectric%20effect.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Schematic of the experiment to demonstrate the photoelectric effect. Filtered, monochromatic light of certain wavelength strikes the emitting electrode (E) inside a vacuum tube. The collector electrode (C) is biased to a voltage VC that can be set to attract the emitted electrons, when positive, or prevent any of them from reaching the collector when negative.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OfdkiRY73bg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Radiation energy deposition [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/radiation-energy-deposition/</link>
+      <pubDate>Thu, 13 Jan 2022 00:44:50 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/radiation-energy-deposition/</guid>
+      <description>&lt;h2 id=&#34;radiation-energy-deposition&#34;&gt;Radiation Energy Deposition&lt;/h2&gt;
+&lt;p&gt;The energy from ionizing radiations is not deposited uniformly in the absorbing medium but is located along the tracks of the charged particles set in motion—electrons in the case of X- or gamma-rays, protons, and alpha-particles in the case of neutrons. Radiation chemists speak in terms of “spurs,” “blobs,” and “short tracks.” There is, of course, a full spectrum of energy event sizes, and it is quite arbitrary to divide them into just three categories, but it turns out to be instructive. A spur contains up to 100 eV of energy and involves, on average, three ion pairs. In the case of X- or gamma-rays, 95% of the energy deposition events are spurs, which have a diameter of about 4 nm, which is about twice the diameter of the DNA double helix. Blobs are much less frequent for X- or gamma-rays; they have a diameter of about 7 nm and contain on average about 12 ion pairs with an energy range of 100–500 eV.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-spur-and-blob&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Spur&amp;amp;Blob.png&#34; data-caption=&#34;Spur and Blob&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Spur&amp;amp;Blob.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Spur and Blob
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfxOE9ZpqYrCV6S7YVCkaFIzsiVP2rSxDF8B17g3hy8Kz-nWQ/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;1200&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear energy transfer (LET) [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/linear-energy-transfer-let/</link>
+      <pubDate>Thu, 13 Jan 2022 00:44:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/linear-energy-transfer-let/</guid>
+      <description>&lt;h2 id=&#34;linear-energy-transfer&#34;&gt;Linear energy transfer&lt;/h2&gt;
+&lt;p&gt;LET is defined as the ratio of energy transferred by a charged particle ($dE_{local}$) to the target atoms along its path through tissue ($dx$). In other words, LET is a measure of the density of ionizations along a radiation beam.
+$$LET(keV/\mu m) = \frac{dE_{local}}{dx}$$
+Higher LET radiations (particles: alpha particles, protons, and neutrons) produce greater damage in a biologic system than lower LET radiations (electrons, gamma rays, x-rays). For example, radiation cataracts are 10 times more likely to occur after neutron radiation than after x-ray radiation, with the same amount of absorbed dose. A high LET will attenuate the radiation more quickly, generally making shielding more effective and preventing deep penetration. On the other hand, the higher concentration of deposited energy can cause more severe damage to any microscopic structures near the particle track.&lt;/p&gt;
+&lt;p&gt;From the figure below, we can see that the energy loss of alpha particle is not uniformly distributed along the path. LET is widely used to characterize energy deposition.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-bragg-curve-of-549-mev-alpha-particles-in-air-this-radiation-is-produced-by-the-decay-of-radon-its-range-is-414-cm-let-is-plotted-here-versus-path-length&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Bragg_Curve_for_Alphas_in_Air.png&#34; data-caption=&#34;Bragg curve of 5.49 MeV alpha particles in air. This radiation is produced by the decay of radon; its range is 4.14 cm. LET is plotted here versus path length&#34;&gt;
+
+
+  &lt;img src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/img/Bragg_Curve_for_Alphas_in_Air.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Bragg curve of 5.49 MeV alpha particles in air. This radiation is produced by the decay of radon; its range is 4.14 cm. LET is plotted here versus path length
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;However, the disadvantage of LET is that it provides no information about radial distribution around the track, nor does it indicate the nature of the variability of energy density along the track. Consequently, two radiations may have the same LET, but differ widely in both microscopic energy density distribution and radiobiological effect.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=table.png width=60% /&gt;
+&lt;/div&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLScfkpRcW7dfewK90f2Eyhfh2wS5cZbot_WJAiz51tfvUsvPIQ/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;500&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unit of Radiation dose: Gy [with exercise questions]</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/unit-of-radiation-dose/</link>
+      <pubDate>Thu, 13 Jan 2022 00:43:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/unit-of-radiation-dose/</guid>
+      <description>&lt;h2 id=&#34;unit-of-radiation-dose&#34;&gt;Unit of Radiation Dose&lt;/h2&gt;
+&lt;p&gt;The gray (symbol: Gy) is a derived unit of ionizing radiation dose in the International System of Units (SI). It is defined as the absorption of one joule of radiation energy per kilogram of matter.&lt;/p&gt;
+&lt;p&gt;The measurement of absorbed dose in tissue is of fundamental importance in radiobiology and radiation therapy as it is the measure of the amount of energy the incident radiation deposits in the target tissue. The measurement of absorbed dose is a complex problem due to scattering and absorption, and many specialist dosimeters are available for these measurements, and can cover applications in 1-D, 2-D and 3-D.&lt;/p&gt;
+&lt;p&gt;In radiation therapy, the amount of radiation applied varies depending on the type and stage of cancer being treated. For curative cases, the typical dose for a solid epithelial tumor ranges from 60 to 80 Gy, while lymphomas are treated with 20 to 40 Gy. Preventive (adjuvant) doses are typically around 45–60 Gy in 1.8–2 Gy fractions (for breast, head, and neck cancers).&lt;/p&gt;
+&lt;p&gt;The average radiation dose from an abdominal X-ray is 0.7 milligrays (0.0007 Gy), that from an abdominal CT scan is 8 mGy, that from a pelvic CT scan is 6 mGy, and that from a selective CT scan of the abdomen and the pelvis is 14 mGy.&lt;/p&gt;
+&lt;h2 id=&#34;radiation-damage-to-dna&#34;&gt;Radiation Damage to DNA&lt;/h2&gt;
+&lt;p&gt;When radiation hits DNA, part of the DNA may break depending on the amount of radiation.&lt;/p&gt;
+&lt;p&gt;It is said that exposure to 1 mGy of X-rays causes a single-strand break at one location per cell on average. This amount of radiation is equivalent to 1 mSv. Double-strand breaks occur less frequently, at 0.04 locations per cell, which means that if 100 cells are evenly exposed to 1 mGy of X-rays, double-strand breaks occur in four cells.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.env.go.jp/en/chemi/rhm/basic-info/1st/img/img-03-02-04.png&#34; alt=&#34;&#34; title=&#34;Radiation damage to DNA&#34;&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSd9zZM1NtRR2Nh6OpC90tC-Nbe-Ib69fd4oq3RfWMKtaHn0PA/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;800&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Quiz of Repair pathways of DNA damages&lt;/iframe&gt;
+&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;b&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;This page has been viewed &lt;span id=&#34;busuanzi_value_page_pv&#34;&gt;&lt;/span&gt; times.&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Radiation detection by the cloud chamber</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/radiation-detection-by-the-cloud-chamber/</link>
+      <pubDate>Thu, 13 Jan 2022 00:42:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/radiation-detection-by-the-cloud-chamber/</guid>
+      <description>&lt;h2 id=&#34;cloud-chamber&#34;&gt;Cloud Chamber&lt;/h2&gt;
+&lt;p&gt;Radioactive elements continually undergo a process of radioactive decay during which their nuclei emit high-speed particles and rays.  These are much too small to be seen under a microscope. &lt;strong&gt;cloud chamber&lt;/strong&gt; is a particle detector used for visualizing the passage of ionizing radiation and was invented by an English physicist, C. T. R. Wilson, in 1911. It is an instrument designed for the study of the trails of radioactive emissions. It consists of a sealed environment containing a supersaturated vapor of water or alcohol.&lt;/p&gt;
+&lt;p&gt;An energetic charged particle (for example, an alpha or beta particle) interacts with the gaseous mixture by knocking electrons off gas molecules via electrostatic forces during collisions, resulting in a trail of ionized gas particles. The resulting ions act as condensation centers around which a mist-like trail of small droplets form if the gas mixture is at the point of condensation. These droplets are visible as a &amp;ldquo;cloud&amp;rdquo; track that persists for several seconds while the droplets fall through the vapor. These tracks have characteristic shapes. For example, an alpha particle track is thick and straight, while an electron track is wispy and shows more evidence of deflections by collisions.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_HI77vKyVDE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Cell plating and counting</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/cell-plating-and-counting/</link>
+      <pubDate>Wed, 12 Jan 2022 00:46:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/cell-plating-and-counting/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/U3AajK9rECg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Production of radiations for radiotherapy</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/production-of-radiations-for-radiotherapy/</link>
+      <pubDate>Wed, 12 Jan 2022 00:46:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/production-of-radiations-for-radiotherapy/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J5WQssQzbp4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2uLNr9TUe4M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6af5pKFbDQo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cell death modes--necrosis vs apoptosis</title>
+      <link>http://personal.cityu.edu.hk/liangdai/post/cell-death-modes-necrosis-vs-apoptosis/</link>
+      <pubDate>Wed, 12 Jan 2022 00:30:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/post/cell-death-modes-necrosis-vs-apoptosis/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BuUnghb0BB8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation Animation</title>
+      <link>http://personal.cityu.edu.hk/liangdai/simulations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/simulations/</guid>
+      <description>&lt;h3 id=&#34;__1-a-knotted-ring-polymer-confined-between-two-parallel-plates__&#34;&gt;&lt;strong&gt;1. A knotted ring polymer confined between two parallel plates&lt;/strong&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;simulation-configuration&#34;&gt;simulation configuration&lt;/h5&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/1_hu4844158b70eaafebb61ff3f827d02451_14455_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/1_hu4844158b70eaafebb61ff3f827d02451_14455_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;277&#34; height=&#34;94&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h5 id=&#34;l400a-h3a&#34;&gt;L=400a, H=3a&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;l200a-h2a&#34;&gt;L=200a, H=2a&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-__unknotting-dynamics-of-a-knotted-chain-with-side-chains__&#34;&gt;2. &lt;strong&gt;Unknotting dynamics of a knotted chain with side chains&lt;/strong&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;all-atom-simulation&#34;&gt;All-atom simulation&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;3.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;coarse-grained-simulation&#34;&gt;Coarse-grained simulation&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-crowding-induced-polymer-trapping-in-a-channel&#34;&gt;3. Crowding-Induced Polymer Trapping in a Channel&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;5.gif&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;6.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-peptide-membrane-interaction&#34;&gt;4. Peptide-membrane interaction&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;7.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-dna-deformations-by-ions&#34;&gt;5. DNA deformations by ions&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/8_huc8561a5b21726a088652ecd2d97b1172_80261_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+
+
+  &lt;img data-src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/8_huc8561a5b21726a088652ecd2d97b1172_80261_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;303&#34; height=&#34;410&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;img src=&#34;9.gif&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;10.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-sharp-bending-induced-defects-in-dna-minicircle&#34;&gt;6. Sharp bending induced defects in DNA minicircle&lt;/h3&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/11_huba6c8a83beb6e74eab4c27fdb3b11100_283088_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;http://personal.cityu.edu.hk/liangdai/liangdai/simulations/11_huba6c8a83beb6e74eab4c27fdb3b11100_283088_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;712&#34; height=&#34;545&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;7-plastic-crystal-phase-transition&#34;&gt;7. Plastic crystal phase transition&lt;/h3&gt;
+&lt;h5 id=&#34;plastic-crystal-molecular-orientations-are-disordered&#34;&gt;Plastic crystal (molecular orientations are disordered)&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;12.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;crystal-molecular-orientations-are-ordered&#34;&gt;crystal (molecular orientations are ordered)&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;13.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

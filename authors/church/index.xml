@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Church | Dai Liang Group</title>
+    <link>http://personal.cityu.edu.hk/liangdai/authors/church/</link>
+      <atom:link href="http://personal.cityu.edu.hk/liangdai/authors/church/index.xml" rel="self" type="application/rss+xml" />
+    <description>Church</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2024</copyright><lastBuildDate>Mon, 28 Feb 2022 00:45:00 +0000</lastBuildDate>
+    <image>
+      <url>http://personal.cityu.edu.hk/liangdai/img/banner_knot.jpg</url>
+      <title>Church</title>
+      <link>http://personal.cityu.edu.hk/liangdai/authors/church/</link>
+    </image>
+    
+    <item>
+      <title>3D Print Introduction #1</title>
+      <link>http://personal.cityu.edu.hk/liangdai/phy3116/3d-printer/</link>
+      <pubDate>Mon, 28 Feb 2022 00:45:00 +0000</pubDate>
+      <guid>http://personal.cityu.edu.hk/liangdai/phy3116/3d-printer/</guid>
+      <description>&lt;h1 id=&#34;first-you-will-need-a-digital-model-of-your-molecule-of-interest&#34;&gt;First you will need a digital model of your molecule of interest.&lt;/h1&gt;
+&lt;p&gt;There are multiple options to generate a 3D printable protein model. These instructions are written for the popular software ChimeraX. You can download in 
+&lt;a href=&#34;https://www.cgl.ucsf.edu/chimerax/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCSF ChimeraX&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Find your model on the 
+&lt;a href=&#34;https://www.rcsb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Protein Data Bank&lt;/a&gt; and download in PDB Format (gz).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;In case you haven’t yet, download and install ChimeraX (Free for private use and academic or research institutes).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Start ChimeraX and open the file (File -&amp;gt; Open).&lt;/strong&gt;
+&lt;img src=&#34;1.png&#34; alt=&#34;ChimeraX 1&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Often, the model will contain additional chains or ligands. To remove the extra chains, do the following:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Select the chain you do not need (Select -&amp;gt; Chain), go to Actions -&amp;gt; Ribbon -&amp;gt; Hide. &lt;img src=&#34;2.png&#34; alt=&#34;ChimeraX 2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;If there are many extra chains, select the one you need (Select -&amp;gt; Chain), and then click on Select – Invert all models. This will select all chains besides the one you need. Then, go to Actions -&amp;gt; Ribbon -&amp;gt; Hide.&lt;/li&gt;
+&lt;li&gt;For a ligand:
+&lt;ul&gt;
+&lt;li&gt;Even if you want to print the ligand as well, we still recommend removing as described above and printing it separately. Since there is normally (logically) a gap between ligand and molecule they should ideally be printed as separate objects.&lt;/li&gt;
+&lt;li&gt;Remove the ligand by selecting the entire chain (Select -&amp;gt; Chain), then go to Actions -&amp;gt;Atoms/Bonds -&amp;gt; Hide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Prepare the chain for 3D-printing: Most importantly, you need to make sure the structure is thick enough to survive printing. Optionally you can add colors to highlight features or communicate other important information.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Thickness of the structures: In order to adjust the sizes, select the entire chain (Select -&amp;gt; Chain) and go to Tools -&amp;gt; Depiction -&amp;gt; Ribbon Style Editor (for older version), and for latest version Use command like &lt;code&gt;cartoon style width 2.5 thick 0.91&lt;/code&gt; to change the width and thick of the cartoon bonds. As a rule of thumb, the minimum thickness in smaller models should not be below 3 mm, in models with height, length or width greater than 20 cm the minimum thickness should be somewhere at least 6 mm, instructions on how to measure the wall thickness are at the end of this section.&lt;/li&gt;
+&lt;li&gt;Colors (optional): color the secondary structures by doing the following: Select -&amp;gt; Structure -&amp;gt; Secondary Structure -&amp;gt; Coil. Go to Actions -&amp;gt; Color and chose a Coil color. Repeat the same process with Helices and Sheets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Done! Now export your model for 3D printing.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to File -&amp;gt; Export Scene. For file format use STL for non-colored 3D-printing (i.e. for FDM, SLS, or SLA 3D printing technologies) and VRML (.wrl, .vrml) for colored models.&lt;img src=&#34;3.png&#34; alt=&#34;ChimeraX 3&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

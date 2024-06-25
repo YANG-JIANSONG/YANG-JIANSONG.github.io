@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dai Liang">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Computational Soft Matter and Biophysics Group @ City University of Hong Kong">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://personal.cityu.edu.hk/liangdai/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/liangdai/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/liangdai/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  <link rel="alternate" href="/liangdai/index.xml" type="application/rss+xml" title="Dai Liang Group">
+  
+
+  <link rel="manifest" href="/liangdai/index.webmanifest">
+  <link rel="icon" type="image/png" href="/liangdai/images/icon_hu8c7a9999c3c8b973aeae0ab9a4ab74a0_56823_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/liangdai/images/icon_hu8c7a9999c3c8b973aeae0ab9a4ab74a0_56823_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://personal.cityu.edu.hk/liangdai/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Dai Liang Group">
+  <meta property="og:url" content="http://personal.cityu.edu.hk/liangdai/">
+  <meta property="og:title" content="Dai Liang Group">
+  <meta property="og:description" content="Computational Soft Matter and Biophysics Group @ City University of Hong Kong"><meta property="og:image" content="http://personal.cityu.edu.hk/liangdai/img/banner_knot.jpg">
+  <meta property="twitter:image" content="http://personal.cityu.edu.hk/liangdai/img/banner_knot.jpg"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2022-02-28T00:45:00&#43;00:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite","url": "http://personal.cityu.edu.hk/liangdai/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Dai Liang Group</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/liangdai/">Dai Liang Group</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/liangdai/">Dai Liang Group</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/#headbanner" data-target="#headbanner"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/#people" data-target="#people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/#accomplishments" data-target="#accomplishments"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/post"><span>PHY4274</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/phy3116"><span>PHY3116</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/photos"><span>Photos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/simulations"><span>Simulations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/liangdai/conference"><span>Conference</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="headbanner" class="home-section wg-blank   " style="padding: 80px 20px 80px 20px;" >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Computational Soft Matter and Biophysics Group</h1>
+      <p>@ City University of Hong Kong</p>
+    </div>
+    <div class="col-12 col-lg-8">
+      <ul>
+<li>
+<p>We apply multi-scale modeling, from atomistic to coarse-grained, and statistical mechanics to perform research in soft matter physics and biophysics, with tight collaboration with experimental groups.</p>
+</li>
+<li>
+<p>In addition to addressing fundamental physics problems in soft matter systems, our group is interested in practical applications such as design of antimicrobial peptides for antibiotic drugs, and DNA sequencing technologies based on nanopores or nanochannels.</p>
+</li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle" src="/liangdai/authors/admin/avatar_hu12664e9331ef317e8a24afd7e2371ffc_18524_270x270_fill_q90_lanczos_center.jpg" alt="Dai Liang">
+      
+
+      <div class="portrait-title">
+        <h2>Dai Liang</h2>
+        <h3>Associate Professor, Department of Physics</h3>
+
+        
+        <h3>
+          <a href="https://www.cityu.edu.hk/phy/" target="_blank" rel="noopener">
+          <span>City University of Hong Kong</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/liangdai/#contact" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://scholar.google.com/citations?user=lW_F7cgAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>Principal Investigator</h1>
+
+    <p>Dr. Liang Dai joined the Department of Physics as an Assistant Professor in Oct 2018 and was promoted to Associate Professor in July 2023.</p>
+<p>Previously, he worked as a research scientist in Singapore-MIT Alliance for Research and Technology (SMART), and a postdoc at Indiana University.</p>
+<p>Dr. Dai obtained his BSc degree from University of Science and Technology of China in 2004, and his PhD degree in physics from National University of Singapore in 2009.</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Computational Soft Matter</li>
+          
+          <li>Biophysics</li>
+          
+          <li>Polymer Physics</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Physics, 2009</p>
+              <p class="institution">National University of Singapore</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc in Physics, 2004</p>
+              <p class="institution">University of Science and Technology of China</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="people" class="home-section wg-people   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>People</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Grad Students</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/hehao/"><img class="avatar avatar-circle" src="/liangdai/authors/hehao/avatar_hu20c1e4bd73b2e1307ef21a2472e085f7_146217_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/hehao/">He Hao (何好)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:haohe24-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/ouyangzexi/"><img class="avatar avatar-circle" src="/liangdai/authors/ouyangzexi/avatar_hu787d4569739cede1b8d8b7ff21802980_13408_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/ouyangzexi/">Ouyang Zexi (欧阳泽西)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:zexouyang2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/qiuqiyuan/"><img class="avatar avatar-circle" src="/liangdai/authors/qiuqiyuan/avatar-cityu10_hu0e0d8dd35e2283dc3e0b438b14744c6b_115973_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/qiuqiyuan/">Qiu Qiyuan (邱其缘)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:qiyuanqiu2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/yangjiansong/"><img class="avatar avatar-circle" src="/liangdai/authors/yangjiansong/avatar_huad24fe0e4f9b8e0879863c1fa4d301c4_393726_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/yangjiansong/">Yang Jiansong (杨建松)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:jsyang5-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zhangzhiyu/"><img class="avatar avatar-circle" src="/liangdai/authors/zhangzhiyu/avatar_hu1368e4ffa06e7513186f849074288e92_166016_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zhangzhiyu/">Zhang Zhiyu (张智毓)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:zzhang578-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zhuyongjian/"><img class="avatar avatar-circle" src="/liangdai/authors/zhuyongjian/avatar_hu1df7bfa3bc544d5ade15705344c65879_67909_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zhuyongjian/">Zhu Yongjian (朱永健)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:yongjizhu7-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zuohongwei/"><img class="avatar avatar-circle" src="/liangdai/authors/zuohongwei/avatar_hu9c1bfe864c9da0ee28b2e64d7482a73e_4915200_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zuohongwei/">Zuo Hongwei (左洪威)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:hongwezuo2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Postdoc</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/sunliang_postdoc/"><img class="avatar avatar-circle" src="/liangdai/authors/sunliang_postdoc/avatar_huad4020e04a0f38da9522d9e068216a7d_15936_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/sunliang_postdoc/">Sun Liang (孙良)</a></h2>
+      <h3>Postdoc</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:neo.sun@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/tianfujia_postdoc/"><img class="avatar avatar-circle" src="/liangdai/authors/tianfujia_postdoc/avatar_hu85482727052fabdd5ffa9387b6c741dc_17009_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/tianfujia_postdoc/">Tian Fujia (田馥嘉)</a></h2>
+      <h3>Postdoc</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:fujiatian2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Co-supervised Students</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/wangsiming/"><img class="avatar avatar-circle" src="/liangdai/authors/wangsiming/avatar_hu6869bf5f9bc4574ddf448636d9d9a9fd_24889_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/wangsiming/">Wang Siming (王思明)(Co-supervisor:Asst. Prof. Yu CHAI)</a></h2>
+      <h3>Co-supervised Students</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:smwang7-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Former Members</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/alexabraham/"><img class="avatar avatar-circle" src="/liangdai/authors/alexabraham/avatar_hu279bd858b990d68f8390b2614b3cfd70_235357_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/alexabraham/">Alex ABRAHAM, Research assistant (2019)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/chancheukyingcherry/"><img class="avatar avatar-circle" src="/liangdai/authors/chancheukyingcherry/avatar_hu65d1723cdffb5b399251172da98f5d0b_39739_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/chancheukyingcherry/">CHAN Cheuk Ying Cherry, FYP student (2019)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/chenjialu/"><img class="avatar avatar-circle" src="/liangdai/authors/chenjialu/avatar_hub04291afa81f697586c5f31561b60be5_250183_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/chenjialu/">Chen Jialu(Main Supervisor Professor Ruiqin Zhang), PhD student(2023)</a></h2>
+      <h3>Co-supervised Students</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:to@jialuchen8-c@my.cityu.edu.hk%27" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/chenweijie/"><img class="avatar avatar-circle" src="/liangdai/authors/chenweijie/avatar_hu8e1ccdeab12d59f829b7d29ea3b3ec40_219637_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/chenweijie/">Chen Weijie (陈玮洁), MSc Student (2021)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:wchen96-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/cheunglunalan/"><img class="avatar avatar-circle" src="/liangdai/authors/cheunglunalan/avatar_hu954eeddb8f7eac12da2d1660e4628443_53071_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/cheunglunalan/">CHEUNG Lun Alan, FYP student (2019)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/liqixuan/"><img class="avatar avatar-circle" src="/liangdai/authors/liqixuan/avatar_huf3cc9222a317a27b8c837a27980e6e60_148839_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/liqixuan/">Li Qixuan, MSc Student (2022)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:296197536@qq.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/luluwei/"><img class="avatar avatar-circle" src="/liangdai/authors/luluwei/avatar_hu613b85e893a013f228e316a0711bb119_6485592_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/luluwei/">Lu Luwei, short-term visitor</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/olafsvandans/"><img class="avatar avatar-circle" src="/liangdai/authors/olafsvandans/avatar_hu84b7855707eddf9baf446e03e380d65f_45714_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/olafsvandans/">Olafs Vandans, Research assistant (2019)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/sunliang/"><img class="avatar avatar-circle" src="/liangdai/authors/sunliang/avatar_huad4020e04a0f38da9522d9e068216a7d_15936_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/sunliang/">Sun Liang (孙良), PhD student(2023)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:neo.sun@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/tianfujia/"><img class="avatar avatar-circle" src="/liangdai/authors/tianfujia/avatar_hu85482727052fabdd5ffa9387b6c741dc_17009_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/tianfujia/">Tian Fujia (田馥嘉), PhD student(2023)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:fujiatian2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/wangsimin/"><img class="avatar avatar-circle" src="/liangdai/authors/wangsimin/avatar_hu88358bce529e20eb0df5fdc307273d58_14897_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/wangsimin/">Wang Simin (王思敏), PhD student(2023)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:smwang6-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zhongxiaoshuang/"><img class="avatar avatar-circle" src="/liangdai/authors/zhongxiaoshuang/avatar_hubffcb6d109e95efe6508d84d0ca4d736_5465479_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zhongxiaoshuang/">Zhong Xiaoshuang, MSc Student (2022)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/liangdai/" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zhuhaoqi/"><img class="avatar avatar-circle" src="/liangdai/authors/zhuhaoqi/avatar_hu0aa0adf355fb91d93329825260902ac4_3747439_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zhuhaoqi/">Zhu Haoqi (朱浩琦), PhD student(2023)</a></h2>
+      <h3>PhD Student</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:hqzhu2-c@my.cityu.edu.hk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/liangdai/authors/zuo/"><img class="avatar avatar-circle" src="/liangdai/authors/zuo/avatar_hu9c1bfe864c9da0ee28b2e64d7482a73e_4915200_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/liangdai/authors/zuo/">ZUO Hongwei, FYP student (2019)</a></h2>
+      <h3>Former Members</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="accomplishments" class="home-section wg-accomplishments   "  >
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Teaching</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="https://www.cityu.edu.hk/catalogue/ug/current/course/GE1305.htm" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">GE1305 Everyday physics</h4></a><div class="card-subtitle my-0 article-metadata">CityU<span class="middot-divider"></span>
+
+            Jan 2020
+            
+            – Apr 2020
+            
+          </div>
+
+          
+            <div class="card-text">In this course, a non-mathematical approach is used to teach students physics concepts and principles, which are of general relevance and enable the students to develop well-informed opinions and choices in their professional career and everyday life. Students are also expected to learn in the course thinking skills of a physicist, which are evidence-based, critical and based on the framework of physical principles.</div>
+          
+
+          
+        </div>
+      </div>
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="https://www.cityu.edu.hk/catalogue/ug/current/course/PHY1400.htm" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">PHY1400 - Introductory Physics for Biologists</h4></a><div class="card-subtitle my-0 article-metadata">CityU<span class="middot-divider"></span>
+
+            Jan 2020
+            
+            – Apr 2020
+            
+          </div>
+
+          
+            <div class="card-text">This course covers a wide scope of topics in physics relevant to medical and veterinary programs including biomechanics, heat, gases, wave and optics in both physiological and pathological contexts.</div>
+          
+
+          
+        </div>
+      </div>
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="http://www.cityu.edu.hk/catalogue/pg/201920/course/PHY8001.htm" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">PHY8001 Survival skills for research scientists</h4></a><div class="card-subtitle my-0 article-metadata">CityU<span class="middot-divider"></span>
+
+            Sep 2019
+            
+            – Dec 2019
+            
+          </div>
+
+          
+            <div class="card-text">The course is designed for students enrolled in the MPhil and PhD programmes to train them in acquiring the necessary skills of practicing research scientists.</div>
+          
+
+          
+        </div>
+      </div>
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="http://www.cityu.edu.hk/catalogue/pg/201920/course/PHY8004.htm" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">PHY8004 Postgraduate Seminar</h4></a><div class="card-subtitle my-0 article-metadata">CityU<span class="middot-divider"></span>
+
+            Sep 2019
+            
+            – Dec 2019
+            
+          </div>
+
+          
+            <div class="card-text">The course aims to broaden the scientific horizon of postgraduate students in the fields of physics via active participation on research and scientific seminars. This course is a scientific forum for postgraduate students to exchange research information and to discuss scientific problems. The course is designed to develop the communication skills at presentation of research and scientific work.</div>
+          
+
+          
+        </div>
+      </div>
+    
+      <div class="card experience course">
+        <div class="card-body"><a href="https://www.cityu.edu.hk/catalogue/ug/current/course/PHY4274.htm" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">PHY4274 Radiation Biophysics</h4></a><div class="card-subtitle my-0 article-metadata">CityU<span class="middot-divider"></span>
+
+            Jan 2019
+            
+            – Apr 2019
+            
+          </div>
+
+          
+            <div class="card-text">The present course aims to teach the students about the correlations of radiation physics and behavior of the human body. The course materials mainly cover the interactions of ionization radiation with cells and tissues in the human body, and clinical applications of ionizing radiation.</div>
+          
+
+          
+        </div>
+      </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul">
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email"><a href="mailto:liangdai@cityu.edu.hk">liangdai@cityu.edu.hk</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+        <span id="person-telephone"><a href="tel:&#43;852%2034426025">&#43;852 34426025</a></span>
+      </li>
+      
+
+      
+      
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">Yeung Building G6601, City University of Hong Kong, 83 Tat Chee Ave, Kowloon Tong, Hong Kong </span>
+        </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+        <span>Enter Yeung Building and take the stairs to Office G6601 on Floor 6</span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Wednesday 14:00 to 16:00</span>
+      </li>
+      
+
+      
+
+      
+      
+
+    </ul>
+
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="22.336108">
+      <input id="map-lng" value="114.173200">
+      <input id="map-dir" value="Yeung Building G6601, City University of Hong Kong, 83 Tat Chee Ave, Kowloon Tong, Hong Kong ">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/liangdai/js/academic.min.6f7ce8be710290b8c431bbc97f405d15.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  <p class="powered-by">
+    ©2024 &middot; 
+    Computational Soft Matter and Biophysics Group
+    <br /><span><i class="fas fa-clock"></i></span>
+    <i>Last Modified:</i>
+    2024-06-26 12:54am Wednesday
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
