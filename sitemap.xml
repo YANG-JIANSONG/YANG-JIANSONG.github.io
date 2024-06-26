@@ -17,12 +17,6 @@
     <loc>http://localhost:64230/posts/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:64230/projects/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:64230/projects/web/</loc>
-    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:64230/series/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,8 +44,23 @@
     <loc>http://localhost:64230/tags/emoji/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:64230/projects/</loc>
+    <lastmod>2024-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:64230/projects/web/</loc>
+    <lastmod>2024-06-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:64230/servers/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:64230/projects/machinelearning/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:64230/projects/top/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:64230/projects/tube-model/</loc>
+    <lastmod>2023-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:64230/authors/</loc>
     <lastmod>2023-01-05T01:15:52+01:00</lastmod>

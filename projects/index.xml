@@ -6,14 +6,35 @@
     <description>Recent content in Projects on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:64230/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research group website construction and maintenance</title>
       <link>http://localhost:64230/projects/web/</link>
-      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:64230/projects/web/</guid>
       <description>课题组网站搭建与维护&#xA;https://github.com/YANG-JIANSONG/Website_dai_group (私人仓库，需授权)</description>
+    </item>
+    <item>
+      <title>Research progress in ML</title>
+      <link>http://localhost:64230/projects/machinelearning/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/machinelearning/</guid>
+      <description>数据存放位置</description>
+    </item>
+    <item>
+      <title>Research progress in topoisomeras</title>
+      <link>http://localhost:64230/projects/top/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/top/</guid>
+      <description>数据存放位置</description>
+    </item>
+    <item>
+      <title>Research progress in tube model</title>
+      <link>http://localhost:64230/projects/tube-model/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/tube-model/</guid>
+      <description>数据存放位置</description>
     </item>
   </channel>
 </rss>

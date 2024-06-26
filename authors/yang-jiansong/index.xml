@@ -29,5 +29,33 @@
       <guid>http://localhost:64230/posts/first-created/</guid>
       <description>我是用Hugo进行的本网站搭建。&#xA;#hugo版本 $ hugo version hugo v0.127.0-74e0f3bd63c51f3c7a0f07a7c779eec9e922957e+extended windows/amd64 BuildDate=2024-06-05T10:27:59Z VendorInfo=gohugoio #hugo搭建新网站 $ hugo new site &amp;lt;sitename&amp;gt; $ cd &amp;lt;sitename&amp;gt; #hugo主题 $ cd themes $ git clone https://github.com/luizdepra/hugo-coder.git #将exampleSite文件夹下的所有文件复制到&amp;lt;sitename&amp;gt;文件夹下 #返回&amp;lt;sitename&amp;gt;文件夹，使用Hugo命令搭建随时查看的本地网站 $ hugo server --disableFastRender #使用hugo更新public文件夹 $ hugo 基于Github托管的网站&#xA;#永久域名 yang-jiansong.github.io #将public下的所有文件上载到github yang-jiansong.github.io仓库中 </description>
     </item>
+    <item>
+      <title>Research group website construction and maintenance</title>
+      <link>http://localhost:64230/projects/web/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/web/</guid>
+      <description>课题组网站搭建与维护&#xA;https://github.com/YANG-JIANSONG/Website_dai_group (私人仓库，需授权)</description>
+    </item>
+    <item>
+      <title>Research progress in ML</title>
+      <link>http://localhost:64230/projects/machinelearning/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/machinelearning/</guid>
+      <description>数据存放位置</description>
+    </item>
+    <item>
+      <title>Research progress in topoisomeras</title>
+      <link>http://localhost:64230/projects/top/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/top/</guid>
+      <description>数据存放位置</description>
+    </item>
+    <item>
+      <title>Research progress in tube model</title>
+      <link>http://localhost:64230/projects/tube-model/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/tube-model/</guid>
+      <description>数据存放位置</description>
+    </item>
   </channel>
 </rss>
