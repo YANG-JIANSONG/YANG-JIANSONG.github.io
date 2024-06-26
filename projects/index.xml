@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on yangjiansong</title>
+    <link>http://localhost:64230/projects/</link>
+    <description>Recent content in Projects on yangjiansong</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:64230/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research group website construction and maintenance</title>
+      <link>http://localhost:64230/projects/web/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64230/projects/web/</guid>
+      <description>课题组网站搭建与维护&#xA;https://github.com/YANG-JIANSONG/Website_dai_group (私人仓库，需授权)</description>
+    </item>
+  </channel>
+</rss>
