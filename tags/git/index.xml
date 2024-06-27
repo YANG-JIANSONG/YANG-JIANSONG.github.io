@@ -20,7 +20,7 @@
       <link>http://www.example.com/posts/git/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/posts/git/</guid>
-      <description>使用方法: git&#xA;#第一次 git init git remote add origin https://github.com/yourName/repositoryname.git #非第一次 #add命令添加所有文件到临时库 git add . #commit命令添加修改的文件到本地库 git commit -m &amp;#34;new commit&amp;#34; #push命令将本地库文件上传到远程库 git push -u origin master #也可以直接使用我编写好的脚本update_git.sh bash update_git.sh </description>
+      <description>使用方法: git&#xA;#第一次 git init git remote add origin https://github.com/yourName/repositoryname.git #非第一次 #add命令添加所有文件到临时库 git add . #commit命令添加修改的文件到本地库 git commit -m &amp;#34;new commit&amp;#34; #push命令将本地库文件上传到远程库 git push -u origin master #也可以直接使用我编写好的脚本update_git.sh bash update_git.sh #删除连接 </description>
     </item>
   </channel>
 </rss>
