@@ -2,106 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>http://www.example.com/tags/hugo/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/knot/</loc>
+    <loc>http://www.example.com/tags/knot/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>http://www.example.com/tags/markdown/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://www.example.com/posts/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://www.example.com/series/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
+    <loc>http://www.example.com/categories/syntax/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/identify_knot/</loc>
+    <loc>http://www.example.com/posts/identify_knot/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/theme-demo/</loc>
+    <loc>http://www.example.com/series/theme-demo/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/theme-demo/</loc>
+    <loc>http://www.example.com/categories/theme-demo/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/yang-jiansong/</loc>
+    <loc>http://www.example.com/authors/yang-jiansong/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://www.example.com/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>http://www.example.com/tags/git/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/create_server/</loc>
+    <loc>http://www.example.com/posts/create_server/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/git/</loc>
+    <loc>http://www.example.com/posts/git/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first-created/</loc>
+    <loc>http://www.example.com/posts/first-created/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
+    <loc>http://www.example.com/tags/emoji/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://www.example.com/projects/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/web/</loc>
+    <loc>http://www.example.com/projects/web/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/servers/</loc>
+    <loc>http://www.example.com/servers/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/machinelearning/</loc>
+    <loc>http://www.example.com/projects/machinelearning/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/top/</loc>
+    <loc>http://www.example.com/projects/top/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/tube-model/</loc>
+    <loc>http://www.example.com/projects/tube-model/</loc>
     <lastmod>2023-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>http://www.example.com/authors/</loc>
     <lastmod>2023-01-05T01:15:52+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/autores/autores-de-hugo/</loc>
+    <loc>http://www.example.com/autores/autores-de-hugo/</loc>
     <lastmod>2023-01-05T01:15:52+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/hugo-authors/</loc>
+    <loc>http://www.example.com/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://www.example.com/categories/</loc>
     <lastmod>2023-01-04T23:21:18+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categoria/temas/</loc>
+    <loc>http://www.example.com/categoria/temas/</loc>
     <lastmod>2023-01-04T23:21:18+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categoria/sintaxe/</loc>
+    <loc>http://www.example.com/categoria/sintaxe/</loc>
     <lastmod>2023-01-04T23:21:06+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/shortcodes/_index.pt-br/</loc>
+    <loc>http://www.example.com/tags/shortcodes/_index.pt-br/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://www.example.com/tags/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://www.example.com/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about.pt-br/</loc>
+    <loc>http://www.example.com/about.pt-br/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://www.example.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://www.example.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://www.example.com/projects/</loc>
   </url>
 </urlset>

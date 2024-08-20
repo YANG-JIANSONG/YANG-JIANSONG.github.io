@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theme Demo on yangjiansong</title>
-    <link>http://localhost:1313/series/theme-demo/</link>
+    <link>http://www.example.com/series/theme-demo/</link>
     <description>Recent content in Theme Demo on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/theme-demo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.example.com/series/theme-demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The usage of Identify knot  program</title>
-      <link>http://localhost:1313/posts/identify_knot/</link>
+      <link>http://www.example.com/posts/identify_knot/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/identify_knot/</guid>
+      <guid>http://www.example.com/posts/identify_knot/</guid>
       <description>使用方法: Identify_knot, Identify_knot_new&#xA;## requirement 安装eigen, libginac-dev, libcln 这三个c++库。 sudo apt install libeigen3-dev sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen sudo apt install libginac-dev #-h -a: alexander map file, example &amp;#34;-a /home/user/table_alex.txt&amp;#34; -c: set number of thread, example -c 1 -n: number of beads -k: knot type desired, example &amp;#34;-k 4_1&amp;#34; -t: number of tail base pairs, set save core+2*tail for knot conf -r: ring, default for open -h: help -s: save chain, default for false -u: save chain for unknot, default for false -f: format type, xyz or lammps, default for xyz </description>
     </item>
     <item>
       <title>How to set up a new server</title>
-      <link>http://localhost:1313/posts/create_server/</link>
+      <link>http://www.example.com/posts/create_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/create_server/</guid>
+      <guid>http://www.example.com/posts/create_server/</guid>
       <description>以下来自于: https://github.com/yjianzhu/newServer&#xA;1. 新服务器 环境以及软件安装 Link to heading new Server environment and software installation&#xA;1.1 ubuntu 20.04 U盘 安装介质 Link to heading Ubuntu 官网 rufus U盘制作软件&#xA;1.2 启动电脑按 Del 进入 Bios, 修改为U盘启动 Link to heading 1.3 默认用户名密码 dai dai Link to heading 需要联系sam 设置静态ip地址。&#xA;1.3.1 设置静态ip地址以及DNS等 Link to heading 1.4 修改ubuntu源 Link to heading 1.4.1 从GUI界面修改 Link to heading 可以在设置-Ubuntu软件中修改为cuhk 或者ustc等其他源，默认的香港源网速很慢&#xA;1.4.2 从CLI界面修改 Link to heading sudo sed -i &#39;s/hk.archive.ubuntu.com/mirrors.ustc.edu.cn/g&#39; /etc/apt/sources.</description>
     </item>
     <item>
       <title>The usage of git</title>
-      <link>http://localhost:1313/posts/git/</link>
+      <link>http://www.example.com/posts/git/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/git/</guid>
+      <guid>http://www.example.com/posts/git/</guid>
       <description>使用方法: git&#xA;#第一次 git init git remote add origin https://github.com/yourName/repositoryname.git #非第一次 #add命令添加所有文件到临时库 git add . #commit命令添加修改的文件到本地库 git commit -m &amp;#34;new commit&amp;#34; #push命令将本地库文件上传到远程库 git push -u origin master #也可以直接使用我编写好的脚本update_git.sh bash update_git.sh #删除连接 </description>
     </item>
     <item>
       <title>Construction time and method</title>
-      <link>http://localhost:1313/posts/first-created/</link>
+      <link>http://www.example.com/posts/first-created/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-created/</guid>
+      <guid>http://www.example.com/posts/first-created/</guid>
       <description>我是用Hugo进行的本网站搭建。&#xA;#hugo版本 $ hugo version hugo v0.127.0-74e0f3bd63c51f3c7a0f07a7c779eec9e922957e+extended windows/amd64 BuildDate=2024-06-05T10:27:59Z VendorInfo=gohugoio #hugo搭建新网站 $ hugo new site &amp;lt;sitename&amp;gt; $ cd &amp;lt;sitename&amp;gt; #hugo主题 $ cd themes $ git clone https://github.com/luizdepra/hugo-coder.git #将exampleSite文件夹下的所有文件复制到&amp;lt;sitename&amp;gt;文件夹下 #返回&amp;lt;sitename&amp;gt;文件夹，使用Hugo命令搭建随时查看的本地网站 $ hugo server --disableFastRender #使用hugo更新public文件夹 $ hugo 基于Github托管的网站&#xA;#永久域名 yang-jiansong.github.io #将public下的所有文件上载到github yang-jiansong.github.io仓库中 </description>
     </item>
     <item>
       <title>Research group website construction and maintenance</title>
-      <link>http://localhost:1313/projects/web/</link>
+      <link>http://www.example.com/projects/web/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/web/</guid>
+      <guid>http://www.example.com/projects/web/</guid>
       <description>课题组网站搭建与维护&#xA;https://github.com/YANG-JIANSONG/Website_dai_group (私人仓库，需授权)</description>
     </item>
     <item>
       <title>Servers</title>
-      <link>http://localhost:1313/servers/</link>
+      <link>http://www.example.com/servers/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servers/</guid>
+      <guid>http://www.example.com/servers/</guid>
       <description>现在正在使用的服务器&#xA;#跳转服务器 cityu3: yangjs@144.214.24.236 cityu4: yangjs@144.214.25.9 #cityu6硬盘待安装 cityu6: yang@144.214.24.125 cityu7: yangjs@144.214.25.165 cityu8: yang@144.214.25.79 cityu15: yang@144.214.24.149 sz1: -p 30274 yjs@211.99.98.122 #or -p 30274 yjs@s7.z100.vip #vscode Host Host cityu15 HostName 144.214.24.149 User yang ForwardAgent yes ProxyCommand ssh -W %h:%p cityu3 IdentityFile &amp;#34;C:\Users\84591\.ssh\id_rsa&amp;#34; </description>
     </item>
     <item>
       <title>Research progress in ML</title>
-      <link>http://localhost:1313/projects/machinelearning/</link>
+      <link>http://www.example.com/projects/machinelearning/</link>
       <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/machinelearning/</guid>
+      <guid>http://www.example.com/projects/machinelearning/</guid>
       <description>数据存放位置..</description>
     </item>
     <item>
       <title>Research progress in topoisomeras</title>
-      <link>http://localhost:1313/projects/top/</link>
+      <link>http://www.example.com/projects/top/</link>
       <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/top/</guid>
+      <guid>http://www.example.com/projects/top/</guid>
       <description>数据存放位置</description>
     </item>
     <item>
       <title>Research progress in tube model</title>
-      <link>http://localhost:1313/projects/tube-model/</link>
+      <link>http://www.example.com/projects/tube-model/</link>
       <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tube-model/</guid>
+      <guid>http://www.example.com/projects/tube-model/</guid>
       <description>数据存放位置</description>
     </item>
   </channel>
