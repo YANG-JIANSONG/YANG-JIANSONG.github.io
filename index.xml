@@ -107,25 +107,11 @@
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://www.example.com/about.pt-br/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/about.pt-br/</guid>
-      <description>Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença Apache Licence 2.0. O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.&#xA;O Hugo faz o uso de vários projetos de código aberto incluíndo:</description>
-    </item>
-    <item>
       <title>Contact</title>
       <link>http://www.example.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/contact/</guid>
       <description>QQ: 3221733199&#xA;Wechat: museemu</description>
-    </item>
-    <item>
-      <title>Projetos</title>
-      <link>http://www.example.com/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/projects/</guid>
-      <description>Nada para ver aqui.. Circulando!</description>
     </item>
   </channel>
 </rss>

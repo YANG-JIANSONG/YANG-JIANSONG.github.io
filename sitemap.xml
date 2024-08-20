@@ -95,11 +95,6 @@
     <loc>http://www.example.com/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/about.pt-br/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.example.com/contact/</loc>
-  </url><url>
-    <loc>http://www.example.com/projects/</loc>
   </url>
 </urlset>
