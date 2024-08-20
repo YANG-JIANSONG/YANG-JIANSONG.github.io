@@ -100,8 +100,6 @@
   </url><url>
     <loc>http://www.example.com/contact/</loc>
   </url><url>
-    <loc>http://www.example.com/contact/</loc>
-  </url><url>
     <loc>http://www.example.com/projects/</loc>
   </url>
 </urlset>
