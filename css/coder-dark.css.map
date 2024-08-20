@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "/Users/ssdexiaodiannao/Documents/yang-jiansong_personal",
+	"sourceRoot": "D:/OneDrive - City University of Hong Kong - Student/web/yang-jiansong_personal",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder-dark.scss",
 		"themes/hugo-coder/assets/scss/_variables.scss",

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on yangjiansong</title>
-    <link>http://www.example.com/tags/git/</link>
+    <link>http://localhost:1313/tags/git/</link>
     <description>Recent content in Git on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to set up a new server</title>
-      <link>http://www.example.com/posts/create_server/</link>
+      <link>http://localhost:1313/posts/create_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/create_server/</guid>
+      <guid>http://localhost:1313/posts/create_server/</guid>
       <description>以下来自于: https://github.com/yjianzhu/newServer&#xA;1. 新服务器 环境以及软件安装 Link to heading new Server environment and software installation&#xA;1.1 ubuntu 20.04 U盘 安装介质 Link to heading Ubuntu 官网 rufus U盘制作软件&#xA;1.2 启动电脑按 Del 进入 Bios, 修改为U盘启动 Link to heading 1.3 默认用户名密码 dai dai Link to heading 需要联系sam 设置静态ip地址。&#xA;1.3.1 设置静态ip地址以及DNS等 Link to heading 1.4 修改ubuntu源 Link to heading 1.4.1 从GUI界面修改 Link to heading 可以在设置-Ubuntu软件中修改为cuhk 或者ustc等其他源，默认的香港源网速很慢&#xA;1.4.2 从CLI界面修改 Link to heading sudo sed -i &#39;s/hk.archive.ubuntu.com/mirrors.ustc.edu.cn/g&#39; /etc/apt/sources.</description>
     </item>
     <item>
       <title>The usage of git</title>
-      <link>http://www.example.com/posts/git/</link>
+      <link>http://localhost:1313/posts/git/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/git/</guid>
+      <guid>http://localhost:1313/posts/git/</guid>
       <description>使用方法: git&#xA;#第一次 git init git remote add origin https://github.com/yourName/repositoryname.git #非第一次 #add命令添加所有文件到临时库 git add . #commit命令添加修改的文件到本地库 git commit -m &amp;#34;new commit&amp;#34; #push命令将本地库文件上传到远程库 git push -u origin master #也可以直接使用我编写好的脚本update_git.sh bash update_git.sh #删除连接 </description>
     </item>
   </channel>

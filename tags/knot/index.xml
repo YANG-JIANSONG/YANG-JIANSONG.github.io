@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knot on yangjiansong</title>
+    <link>http://localhost:1313/tags/knot/</link>
+    <description>Recent content in Knot on yangjiansong</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/knot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The usage of Identify knot  program</title>
+      <link>http://localhost:1313/posts/identify_knot/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/identify_knot/</guid>
+      <description>使用方法: Identify_knot, Identify_knot_new&#xA;## requirement 安装eigen, libginac-dev, libcln 这三个c++库。 sudo apt install libeigen3-dev sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen sudo apt install libginac-dev #-h -a: alexander map file, example &amp;#34;-a /home/user/table_alex.txt&amp;#34; -c: set number of thread, example -c 1 -n: number of beads -k: knot type desired, example &amp;#34;-k 4_1&amp;#34; -t: number of tail base pairs, set save core+2*tail for knot conf -r: ring, default for open -h: help -s: save chain, default for false -u: save chain for unknot, default for false -f: format type, xyz or lammps, default for xyz </description>
+    </item>
+  </channel>
+</rss>

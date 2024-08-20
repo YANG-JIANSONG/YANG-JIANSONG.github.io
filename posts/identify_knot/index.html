@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-  Construction time and method · yangjiansong
+  The usage of Identify knot  program · yangjiansong
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,24 +18,24 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Construction time and method">
+  <meta name="twitter:title" content="The usage of Identify knot  program">
   <meta name="twitter:description" content="Construction time and method">
 
-<meta property="og:url" content="http://localhost:1313/posts/first-created/">
+<meta property="og:url" content="http://localhost:1313/posts/identify_knot/">
   <meta property="og:site_name" content="yangjiansong">
-  <meta property="og:title" content="Construction time and method">
+  <meta property="og:title" content="The usage of Identify knot  program">
   <meta property="og:description" content="Construction time and method">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-06-25T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-08-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-20T00:00:00+00:00">
     <meta property="article:tag" content="Hugo">
     <meta property="article:tag" content="Markdown">
-    <meta property="article:tag" content="Emoji">
-      <meta property="og:see_also" content="http://localhost:1313/posts/identify_knot/">
+    <meta property="article:tag" content="Knot">
       <meta property="og:see_also" content="http://localhost:1313/posts/create_server/">
       <meta property="og:see_also" content="http://localhost:1313/posts/git/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/first-created/">
       <meta property="og:see_also" content="http://localhost:1313/projects/web/">
       <meta property="og:see_also" content="http://localhost:1313/servers/">
       <meta property="og:see_also" content="http://localhost:1313/projects/machinelearning/">
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/posts/first-created/">
+<link rel="canonical" href="http://localhost:1313/posts/identify_knot/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -158,8 +158,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/first-created/">
-              Construction time and method
+            <a class="title-link" href="http://localhost:1313/posts/identify_knot/">
+              The usage of Identify knot  program
             </a>
           </h1>
         </div>
@@ -167,8 +167,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2024-06-25T00:00:00Z">
-                June 25, 2024
+              <time datetime="2024-08-20T00:00:00Z">
+                August 20, 2024
               </time>
             </span>
             <span class="reading-time">
@@ -197,7 +197,7 @@
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/emoji/">Emoji</a>
+      <a href="/tags/knot/">Knot</a>
     </span></div>
 
         </div>
@@ -205,28 +205,25 @@
 
       <div class="post-content">
         
-        <p>我是用<strong>Hugo</strong>进行的本网站搭建。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#hugo版本</span>
-</span></span><span class="line"><span class="cl">$ hugo version
-</span></span><span class="line"><span class="cl">hugo v0.127.0-74e0f3bd63c51f3c7a0f07a7c779eec9e922957e+extended windows/amd64 <span class="nv">BuildDate</span><span class="o">=</span>2024-06-05T10:27:59Z <span class="nv">VendorInfo</span><span class="o">=</span>gohugoio
+        <p>使用方法: Identify_knot, Identify_knot_new</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## requirement</span>
+</span></span><span class="line"><span class="cl">安装eigen, libginac-dev, libcln 这三个c++库。
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#hugo搭建新网站</span>
-</span></span><span class="line"><span class="cl">$ hugo new site &lt;sitename&gt;
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> &lt;sitename&gt;
-</span></span><span class="line"><span class="cl"><span class="c1">#hugo主题</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> themes
-</span></span><span class="line"><span class="cl">$ git clone https://github.com/luizdepra/hugo-coder.git 
+</span></span><span class="line"><span class="cl">sudo apt install libeigen3-dev
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
+</span></span><span class="line"><span class="cl">sudo apt install libginac-dev
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#将exampleSite文件夹下的所有文件复制到&lt;sitename&gt;文件夹下</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#返回&lt;sitename&gt;文件夹，使用Hugo命令搭建随时查看的本地网站</span>
-</span></span><span class="line"><span class="cl">$ hugo server --disableFastRender
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#使用hugo更新public文件夹</span>
-</span></span><span class="line"><span class="cl">$ hugo
-</span></span></code></pre></div><p>基于<strong>Github</strong>托管的网站</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#永久域名</span>
-</span></span><span class="line"><span class="cl">yang-jiansong.github.io
-</span></span><span class="line"><span class="cl"><span class="c1">#将public下的所有文件上载到github yang-jiansong.github.io仓库中</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#-h</span>
+</span></span><span class="line"><span class="cl">-a: alexander map file, example <span class="s2">&#34;-a /home/user/table_alex.txt&#34;</span>
+</span></span><span class="line"><span class="cl">-c: <span class="nb">set</span> number of thread, example -c <span class="m">1</span>
+</span></span><span class="line"><span class="cl">-n: number of beads
+</span></span><span class="line"><span class="cl">-k: knot <span class="nb">type</span> desired, example <span class="s2">&#34;-k 4_1&#34;</span>
+</span></span><span class="line"><span class="cl">-t: number of tail base pairs, <span class="nb">set</span> save core+2*tail <span class="k">for</span> knot conf
+</span></span><span class="line"><span class="cl">-r: ring, default <span class="k">for</span> open
+</span></span><span class="line"><span class="cl">-h: <span class="nb">help</span>
+</span></span><span class="line"><span class="cl">-s: save chain, default <span class="k">for</span> <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">-u: save chain <span class="k">for</span> unknot, default <span class="k">for</span> <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">-f: format type, xyz or lammps, default <span class="k">for</span> xyz
 </span></span></code></pre></div>
       </div>
 
