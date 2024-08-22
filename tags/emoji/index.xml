@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emoji on yangjiansong</title>
-    <link>http://www.example.com/tags/emoji/</link>
+    <link>https://yang-jiansong.github.io/tags/emoji/</link>
     <description>Recent content in Emoji on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yang-jiansong.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Construction time and method</title>
-      <link>http://www.example.com/posts/first-created/</link>
+      <link>https://yang-jiansong.github.io/posts/first-created/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/first-created/</guid>
+      <guid>https://yang-jiansong.github.io/posts/first-created/</guid>
       <description>我是用Hugo进行的本网站搭建。&#xA;#hugo版本 $ hugo version hugo v0.127.0-74e0f3bd63c51f3c7a0f07a7c779eec9e922957e+extended windows/amd64 BuildDate=2024-06-05T10:27:59Z VendorInfo=gohugoio #hugo搭建新网站 $ hugo new site &amp;lt;sitename&amp;gt; $ cd &amp;lt;sitename&amp;gt; #hugo主题 $ cd themes $ git clone https://github.com/luizdepra/hugo-coder.git #将exampleSite文件夹下的所有文件复制到&amp;lt;sitename&amp;gt;文件夹下 #返回&amp;lt;sitename&amp;gt;文件夹，使用Hugo命令搭建随时查看的本地网站 $ hugo server --disableFastRender #使用hugo更新public文件夹 $ hugo 基于Github托管的网站&#xA;#永久域名 yang-jiansong.github.io #快速境外域名 https://yangjiansong.vercel.app/ #将public下的所有文件上载到github yang-jiansong.github.io仓库中 https://github.com/YANG-JIANSONG/YANG-JIANSONG.github.io ##其他机器上部署过程 git clone https://github.com/YANG-JIANSONG/yang-jiansong_personal.git git clone https://github.com/YANG-JIANSONG/YANG-JIANSONG.github.io.git ##复制YANG-JIANSONG.github.io文件夹下的.git文件夹到/public文件夹下 windows 使用 hugo.exe </description>
     </item>
   </channel>
