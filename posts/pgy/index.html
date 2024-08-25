@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-  The usage of git · yangjiansong
+  Oray software installation · yangjiansong
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,24 +18,24 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="The usage of git">
+  <meta name="twitter:title" content="Oray software installation">
   <meta name="twitter:description" content="Construction time and method">
 
-<meta property="og:url" content="http://localhost:1313/posts/git/">
+<meta property="og:url" content="http://localhost:1313/posts/pgy/">
   <meta property="og:site_name" content="yangjiansong">
-  <meta property="og:title" content="The usage of git">
+  <meta property="og:title" content="Oray software installation">
   <meta property="og:description" content="Construction time and method">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-06-26T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-26T00:00:00+00:00">
-    <meta property="article:tag" content="Hugo">
+    <meta property="article:published_time" content="2024-08-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-25T00:00:00+00:00">
+    <meta property="article:tag" content="Oray">
     <meta property="article:tag" content="Markdown">
-    <meta property="article:tag" content="Git">
-      <meta property="og:see_also" content="http://localhost:1313/posts/pgy/">
+    <meta property="article:tag" content="Connext">
       <meta property="og:see_also" content="http://localhost:1313/posts/identify_knot/">
       <meta property="og:see_also" content="http://localhost:1313/posts/create_server/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/git/">
       <meta property="og:see_also" content="http://localhost:1313/posts/first-created/">
       <meta property="og:see_also" content="http://localhost:1313/projects/web/">
       <meta property="og:see_also" content="http://localhost:1313/servers/">
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/posts/git/">
+<link rel="canonical" href="http://localhost:1313/posts/pgy/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -158,8 +158,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/git/">
-              The usage of git
+            <a class="title-link" href="http://localhost:1313/posts/pgy/">
+              Oray software installation
             </a>
           </h1>
         </div>
@@ -167,8 +167,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2024-06-26T00:00:00Z">
-                June 26, 2024
+              <time datetime="2024-08-25T00:00:00Z">
+                August 25, 2024
               </time>
             </span>
             <span class="reading-time">
@@ -189,7 +189,7 @@
           <div class="tags">
   <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/hugo/">Hugo</a>
+      <a href="/tags/oray/">Oray</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
@@ -197,7 +197,7 @@
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/git/">Git</a>
+      <a href="/tags/connext/">Connext</a>
     </span></div>
 
         </div>
@@ -205,23 +205,28 @@
 
       <div class="post-content">
         
-        <p>使用方法: git</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#第一次</span>
-</span></span><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git remote add origin https://github.com/yourName/repositoryname.git
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#下载蒲公英软件</span>
+</span></span><span class="line"><span class="cl">wget https://pgy.oray.com/softwares/153/download/2156/PgyVisitor_6.2.0_x86_64.deb
+</span></span><span class="line"><span class="cl">sudo -s
+</span></span><span class="line"><span class="cl">dpkg -i PgyVisitor_6.2.0_x86_64.deb
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#非第一次</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#add命令添加所有文件到临时库</span>
-</span></span><span class="line"><span class="cl"> git add .
-</span></span><span class="line"><span class="cl"><span class="c1">#commit命令添加修改的文件到本地库</span>
-</span></span><span class="line"><span class="cl"> git commit -m <span class="s2">&#34;new commit&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#push命令将本地库文件上传到远程库</span>
-</span></span><span class="line"><span class="cl"> git push -u origin master
+</span></span><span class="line"><span class="cl"><span class="c1">#使用方法</span>
+</span></span><span class="line"><span class="cl">pgyvisitor login
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="c1">#也可以直接使用我编写好的脚本update_git.sh</span>
-</span></span><span class="line"><span class="cl"> bash update_git.sh
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="c1">#删除连接</span>
+</span></span><span class="line"><span class="cl">-h --help <span class="nb">help</span>
+</span></span><span class="line"><span class="cl">-v --version get version
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">These are common pgyvisitor commands used in various situations:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">login         login
+</span></span><span class="line"><span class="cl"><span class="nb">logout</span>        <span class="nb">logout</span>
+</span></span><span class="line"><span class="cl">logininfo     display historical login device information
+</span></span><span class="line"><span class="cl">autologin     <span class="nb">set</span> auto login
+</span></span><span class="line"><span class="cl">certcheck     <span class="nb">enable</span> or disenable certificate verification
+</span></span><span class="line"><span class="cl">bypass        display bypass infomation
+</span></span><span class="line"><span class="cl">getmbrs       display vpn networking and members information
+</span></span><span class="line"><span class="cl">showsets      display setting information
 </span></span></code></pre></div>
       </div>
 

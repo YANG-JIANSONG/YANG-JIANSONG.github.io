@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oray on yangjiansong</title>
+    <link>http://localhost:1313/tags/oray/</link>
+    <description>Recent content in Oray on yangjiansong</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/oray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oray software installation</title>
+      <link>http://localhost:1313/posts/pgy/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pgy/</guid>
+      <description>#下载蒲公英软件 wget https://pgy.oray.com/softwares/153/download/2156/PgyVisitor_6.2.0_x86_64.deb sudo -s dpkg -i PgyVisitor_6.2.0_x86_64.deb #使用方法 pgyvisitor login -h --help help -v --version get version These are common pgyvisitor commands used in various situations: login login logout logout logininfo display historical login device information autologin set auto login certcheck enable or disenable certificate verification bypass display bypass infomation getmbrs display vpn networking and members information showsets display setting information </description>
+    </item>
+  </channel>
+</rss>
