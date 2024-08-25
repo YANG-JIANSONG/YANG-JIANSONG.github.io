@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on yangjiansong</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://yang-jiansong.github.io/projects/</link>
     <description>Recent content in Projects on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yang-jiansong.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research group website construction and maintenance</title>
-      <link>http://localhost:1313/projects/web/</link>
+      <link>https://yang-jiansong.github.io/projects/web/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/web/</guid>
+      <guid>https://yang-jiansong.github.io/projects/web/</guid>
       <description>课题组网站搭建与维护&#xA;https://github.com/YANG-JIANSONG/Website_dai_group (私人仓库，需授权)</description>
     </item>
     <item>
       <title>Research progress in ML</title>
-      <link>http://localhost:1313/projects/machinelearning/</link>
+      <link>https://yang-jiansong.github.io/projects/machinelearning/</link>
       <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/machinelearning/</guid>
+      <guid>https://yang-jiansong.github.io/projects/machinelearning/</guid>
       <description>数据存放位置..</description>
     </item>
     <item>
       <title>Research progress in topoisomeras</title>
-      <link>http://localhost:1313/projects/top/</link>
+      <link>https://yang-jiansong.github.io/projects/top/</link>
       <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/top/</guid>
+      <guid>https://yang-jiansong.github.io/projects/top/</guid>
       <description>数据存放位置</description>
     </item>
     <item>
       <title>Research progress in tube model</title>
-      <link>http://localhost:1313/projects/tube-model/</link>
+      <link>https://yang-jiansong.github.io/projects/tube-model/</link>
       <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tube-model/</guid>
+      <guid>https://yang-jiansong.github.io/projects/tube-model/</guid>
       <description>数据存放位置</description>
     </item>
   </channel>

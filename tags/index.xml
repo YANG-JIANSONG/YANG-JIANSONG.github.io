@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on yangjiansong</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://yang-jiansong.github.io/tags/</link>
     <description>Recent content in Tags on yangjiansong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 25 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yang-jiansong.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connext</title>
-      <link>http://localhost:1313/tags/connext/</link>
+      <link>https://yang-jiansong.github.io/tags/connext/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/connext/</guid>
+      <guid>https://yang-jiansong.github.io/tags/connext/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>http://localhost:1313/tags/markdown/</link>
+      <link>https://yang-jiansong.github.io/tags/markdown/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/markdown/</guid>
+      <guid>https://yang-jiansong.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Oray</title>
-      <link>http://localhost:1313/tags/oray/</link>
+      <link>https://yang-jiansong.github.io/tags/oray/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/oray/</guid>
+      <guid>https://yang-jiansong.github.io/tags/oray/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>https://yang-jiansong.github.io/tags/hugo/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>https://yang-jiansong.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Knot</title>
-      <link>http://localhost:1313/tags/knot/</link>
+      <link>https://yang-jiansong.github.io/tags/knot/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/knot/</guid>
+      <guid>https://yang-jiansong.github.io/tags/knot/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://yang-jiansong.github.io/tags/git/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://yang-jiansong.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Emoji</title>
-      <link>http://localhost:1313/tags/emoji/</link>
+      <link>https://yang-jiansong.github.io/tags/emoji/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/emoji/</guid>
+      <guid>https://yang-jiansong.github.io/tags/emoji/</guid>
       <description></description>
     </item>
   </channel>
