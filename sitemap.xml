@@ -2,10 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yang-jiansong.github.io/tags/connext/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <loc>https://yang-jiansong.github.io/tags/hugo/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/tags/knot/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yang-jiansong.github.io/tags/markdown/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/posts/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/series/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/posts/publication/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/categories/syntax/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/series/theme-demo/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/categories/theme-demo/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/authors/yang-jiansong/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yang-jiansong.github.io/tags/connext/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yang-jiansong.github.io/tags/oray/</loc>
@@ -13,33 +43,6 @@
   </url><url>
     <loc>https://yang-jiansong.github.io/posts/pgy/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/posts/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/series/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/categories/syntax/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/series/theme-demo/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/categories/theme-demo/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/authors/yang-jiansong/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/tags/hugo/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yang-jiansong.github.io/tags/knot/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yang-jiansong.github.io/posts/identify_knot/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>

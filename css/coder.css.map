@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder.css",
-	"sourceRoot": "D:/OneDrive - City University of Hong Kong - Student/web/yang-jiansong_personal",
+	"sourceRoot": "E:/1web/yang-jiansong_personal",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder.scss",
 		"themes/hugo-coder/assets/scss/css/normalize.css",
